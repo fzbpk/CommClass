@@ -1,0 +1,40 @@
+D:\code\GYUic\Win32CTC\bin\Debug\Win32CTC.XML
+D:\code\GYUic\Win32CTC\bin\Debug\Win32CTC.dll
+D:\code\GYUic\Win32CTC\bin\Debug\Win32CTC.pdb
+D:\code\GYUic\Win32CTC\obj\Debug\ResolveAssemblyReference.cache
+D:\code\GYUic\Win32CTC\obj\Debug\Win32CTC.dll
+D:\code\GYUic\Win32CTC\obj\Debug\Win32CTC.pdb
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32CTC\bin\Debug\Win32CTC.XML
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32CTC\bin\Debug\Win32CTC.dll
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32CTC\bin\Debug\Win32CTC.pdb
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32CTC\bin\Debug\Win32CTC.tlb
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32CTC\obj\Debug\ResolveAssemblyReference.cache
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32CTC\obj\Debug\Win32CTC.dll
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32CTC\obj\Debug\Win32CTC.pdb
+D:\GYUic\Win32CTC\bin\Debug\Win32CTC.XML
+D:\GYUic\Win32CTC\bin\Debug\Win32CTC.dll
+D:\GYUic\Win32CTC\bin\Debug\Win32CTC.pdb
+D:\GYUic\Win32CTC\bin\Debug\Win32CTC.tlb
+D:\GYUic\Win32CTC\obj\Debug\ResolveAssemblyReference.cache
+D:\GYUic\Win32CTC\obj\Debug\Win32CTC.dll
+D:\GYUic\Win32CTC\obj\Debug\Win32CTC.pdb
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32CTC\bin\Debug\Win32CTC.XML
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32CTC\bin\Debug\Win32CTC.dll
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32CTC\bin\Debug\Win32CTC.pdb
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32CTC\bin\Debug\Win32CTC.tlb
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32CTC\obj\Debug\Win32CTC.csprojResolveAssemblyReference.cache
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32CTC\obj\Debug\Win32CTC.dll
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32CTC\obj\Debug\Win32CTC.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32CTC\bin\Debug\Win32CTC.XML
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32CTC\bin\Debug\Win32CTC.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32CTC\bin\Debug\Win32CTC.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32CTC\obj\Debug\Win32CTC.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32CTC\obj\Debug\Win32CTC.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32CTC\bin\Debug\Win32CTC.tlb
+J:\Project\DotNet\CommClass\Win32CTC\bin\Debug\Win32CTC.XML
+J:\Project\DotNet\CommClass\Win32CTC\bin\Debug\Win32CTC.dll
+J:\Project\DotNet\CommClass\Win32CTC\bin\Debug\Win32CTC.pdb
+J:\Project\DotNet\CommClass\Win32CTC\obj\Debug\Win32CTC.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CommClass\Win32CTC\obj\Debug\Win32CTC.dll
+J:\Project\DotNet\CommClass\Win32CTC\obj\Debug\Win32CTC.pdb
+J:\Project\DotNet\CommClass\Win32CTC\bin\Debug\Win32CTC.tlb

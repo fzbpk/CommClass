@@ -1,0 +1,11 @@
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32DataWork\bin\Debug\Win32DataWork.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32DataWork\bin\Debug\Win32DataWork.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32DataWork\obj\Debug\Win32DataWork.csprojResolveAssemblyReference.cache
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32DataWork\obj\Debug\Win32DataWork.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32DataWork\obj\Debug\Win32DataWork.pdb
+J:\Project\DotNet\CommClass\Win32DataWork\bin\Debug\Win32DataWork.dll
+J:\Project\DotNet\CommClass\Win32DataWork\bin\Debug\Win32DataWork.pdb
+J:\Project\DotNet\CommClass\Win32DataWork\obj\Debug\Win32DataWork.dll
+J:\Project\DotNet\CommClass\Win32DataWork\obj\Debug\Win32DataWork.pdb
+J:\Project\DotNet\CommClass\Win32DataWork\bin\Debug\Win32DataWork.XML
+J:\Project\DotNet\CommClass\Win32DataWork\obj\Debug\Win32DataWork.csprojResolveAssemblyReference.cache

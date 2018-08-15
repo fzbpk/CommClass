@@ -1,0 +1,67 @@
+D:\code\GYUic\Win32SDK\bin\Debug\Win32SDK.dll
+D:\code\GYUic\Win32SDK\bin\Debug\Win32SDK.pdb
+D:\code\GYUic\Win32SDK\bin\Debug\Win32SDK.xml
+D:\code\GYUic\Win32SDK\obj\Debug\ResolveAssemblyReference.cache
+D:\code\GYUic\Win32SDK\obj\Debug\Interop.IWshRuntimeLibrary.dll
+D:\code\GYUic\Win32SDK\obj\Debug\Win32SDK.vbproj.ResolveComReference.cache
+D:\code\GYUic\Win32SDK\obj\Debug\Win32SDK.Resources.resources
+D:\code\GYUic\Win32SDK\obj\Debug\GenerateResource.read.1.tlog
+D:\code\GYUic\Win32SDK\obj\Debug\GenerateResource.write.1.tlog
+D:\code\GYUic\Win32SDK\obj\Debug\Win32SDK.dll
+D:\code\GYUic\Win32SDK\obj\Debug\Win32SDK.xml
+D:\code\GYUic\Win32SDK\obj\Debug\Win32SDK.pdb
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\bin\Debug\Win32SDK.dll
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\bin\Debug\Win32SDK.pdb
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\bin\Debug\Win32SDK.xml
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\obj\Debug\ResolveAssemblyReference.cache
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\obj\Debug\Interop.IWshRuntimeLibrary.dll
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\obj\Debug\Win32SDK.vbproj.ResolveComReference.cache
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\obj\Debug\Win32SDK.Resources.resources
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\obj\Debug\GenerateResource.read.1.tlog
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\obj\Debug\GenerateResource.write.1.tlog
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\obj\Debug\Win32SDK.dll
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\obj\Debug\Win32SDK.xml
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32SDK\obj\Debug\Win32SDK.pdb
+D:\GYUic\Win32SDK\bin\Debug\Win32SDK.dll
+D:\GYUic\Win32SDK\bin\Debug\Win32SDK.pdb
+D:\GYUic\Win32SDK\bin\Debug\Win32SDK.xml
+D:\GYUic\Win32SDK\obj\Debug\ResolveAssemblyReference.cache
+D:\GYUic\Win32SDK\obj\Debug\Interop.IWshRuntimeLibrary.dll
+D:\GYUic\Win32SDK\obj\Debug\Win32SDK.vbproj.ResolveComReference.cache
+D:\GYUic\Win32SDK\obj\Debug\Win32SDK.Resources.resources
+D:\GYUic\Win32SDK\obj\Debug\GenerateResource.read.1.tlog
+D:\GYUic\Win32SDK\obj\Debug\GenerateResource.write.1.tlog
+D:\GYUic\Win32SDK\obj\Debug\Win32SDK.dll
+D:\GYUic\Win32SDK\obj\Debug\Win32SDK.xml
+D:\GYUic\Win32SDK\obj\Debug\Win32SDK.pdb
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\bin\Debug\Win32SDK.dll
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\bin\Debug\Win32SDK.pdb
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\bin\Debug\Win32SDK.xml
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\obj\Debug\Interop.IWshRuntimeLibrary.dll
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.vbproj.ResolveComReference.cache
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.Resources.resources
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.vbproj.GenerateResource.Cache
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.dll
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.xml
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\bin\Debug\Win32SDK.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\bin\Debug\Win32SDK.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\bin\Debug\Win32SDK.xml
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\obj\Debug\Interop.IWshRuntimeLibrary.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.vbproj.ResolveComReference.cache
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.Resources.resources
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.vbproj.GenerateResource.Cache
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.xml
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32SDK\obj\Debug\Win32SDK.vbprojResolveAssemblyReference.cache
+J:\Project\DotNet\CommClass\Win32SDK\bin\Debug\Win32SDK.dll
+J:\Project\DotNet\CommClass\Win32SDK\bin\Debug\Win32SDK.pdb
+J:\Project\DotNet\CommClass\Win32SDK\bin\Debug\Win32SDK.xml
+J:\Project\DotNet\CommClass\Win32SDK\obj\Debug\Interop.IWshRuntimeLibrary.dll
+J:\Project\DotNet\CommClass\Win32SDK\obj\Debug\Win32SDK.vbproj.ResolveComReference.cache
+J:\Project\DotNet\CommClass\Win32SDK\obj\Debug\Win32SDK.Resources.resources
+J:\Project\DotNet\CommClass\Win32SDK\obj\Debug\Win32SDK.vbproj.GenerateResource.Cache
+J:\Project\DotNet\CommClass\Win32SDK\obj\Debug\Win32SDK.dll
+J:\Project\DotNet\CommClass\Win32SDK\obj\Debug\Win32SDK.xml
+J:\Project\DotNet\CommClass\Win32SDK\obj\Debug\Win32SDK.pdb

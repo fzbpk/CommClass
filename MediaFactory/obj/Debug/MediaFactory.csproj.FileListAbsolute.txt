@@ -1,0 +1,6 @@
+J:\Project\DotNet\CommClass\MediaFactory\bin\Debug\MediaFactory.dll
+J:\Project\DotNet\CommClass\MediaFactory\bin\Debug\MediaFactory.pdb
+J:\Project\DotNet\CommClass\MediaFactory\obj\Debug\MediaFactory.dll
+J:\Project\DotNet\CommClass\MediaFactory\obj\Debug\MediaFactory.pdb
+J:\Project\DotNet\CommClass\MediaFactory\obj\Debug\MediaFactory.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CommClass\MediaFactory\bin\Debug\MediaFactory.XML

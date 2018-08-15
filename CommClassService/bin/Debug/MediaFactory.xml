@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MediaFactory</name>
+    </assembly>
+    <members>
+        <member name="T:System.Drawing.MediaFactory.ImageType">
+            <summary>
+            影像类型
+            </summary>
+        </member>
+        <member name="F:System.Drawing.MediaFactory.ImageType.None">
+            <summary>
+            没有
+            </summary>
+        </member>
+        <member name="F:System.Drawing.MediaFactory.ImageType.Bmp">
+            <summary>
+            位图
+            </summary>
+        </member>
+        <member name="T:System.Drawing.MediaFactory.ImageFile">
+            <summary>
+            影像与文件相转换
+            </summary>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ImageFile.ImageToMemoryStream(System.Drawing.Image,System.Drawing.MediaFactory.ImageType)">
+            <summary>
+            影像转流
+            </summary>
+            <param name="image">影像</param>
+            <param name="type">类型</param>
+            <returns>流</returns>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ImageFile.ImageToBytes(System.Drawing.Image,System.Drawing.MediaFactory.ImageType)">
+            <summary>
+            影像转数组
+            </summary>
+            <param name="image">影像</param>
+            <param name="type">类型</param>
+            <returns>数组</returns>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ImageFile.ImageToFile(System.Drawing.Image,System.String)">
+            <summary>
+            影像转文件
+            </summary>
+            <param name="image">影像</param>
+            <param name="FilePath">文件路径</param>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ImageFile.ImageFromMemoryStream(System.IO.MemoryStream)">
+            <summary>
+            流转影像
+            </summary>
+            <param name="Stream">流，注意用完关闭</param>
+            <returns>影像</returns>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ImageFile.ImageFromBytes(System.Byte[])">
+            <summary>
+            数组转影像
+            </summary>
+            <param name="buffer">数组</param>
+            <returns>影像</returns>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ImageFile.ImageFromFile(System.String)">
+            <summary>
+            文件转影像
+            </summary>
+            <param name="FilePath">文件路径</param>
+            <returns>影像</returns>
+        </member>
+        <member name="T:System.Drawing.MediaFactory.ScreenCapture">
+            <summary>
+            截屏,FORM模式下使用
+            </summary>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ScreenCapture.ScreenCount">
+            <summary>
+            获取屏幕数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ScreenCapture.ScreenSize(System.Int32)">
+            <summary>
+            屏幕大小
+            </summary>
+            <param name="ScreenIndex">屏幕索引</param>
+            <returns>屏幕大小</returns>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ScreenCapture.ScreenPoint(System.Int32)">
+            <summary>
+            屏幕起始点
+            </summary>
+            <param name="ScreenIndex">屏幕索引</param>
+            <returns>起始点</returns>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ScreenCapture.FullScreen(System.Int32)">
+            <summary>
+            全屏
+            </summary>
+            <returns>影像</returns>
+        </member>
+        <member name="M:System.Drawing.MediaFactory.ScreenCapture.FixScreen(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            抓取屏幕(层叠的窗口)
+            </summary>
+            <param name="x">左上角的横坐标</param>
+            <param name="y">左上角的纵坐标</param>
+            <param name="width">抓取宽度</param>
+            <param name="height">抓取高度</param>
+            <returns>影像</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+J:\Project\DotNet\CommClass\Communicate\bin\Debug\Communicate.dll
+J:\Project\DotNet\CommClass\Communicate\bin\Debug\Communicate.pdb
+J:\Project\DotNet\CommClass\Communicate\obj\Debug\Communicate.dll
+J:\Project\DotNet\CommClass\Communicate\obj\Debug\Communicate.pdb
+J:\Project\DotNet\CommClass\Communicate\bin\Debug\Communicate.XML
+J:\Project\DotNet\CommClass\Communicate\obj\Debug\Communicate.csprojResolveAssemblyReference.cache

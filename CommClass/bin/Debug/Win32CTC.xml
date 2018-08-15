@@ -1,0 +1,850 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Win32CTC</name>
+    </assembly>
+    <members>
+        <member name="M:Win32CTC.FTPClient.#ctor">
+            <summary>
+            新建FTP客户端
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FTPClient.#ctor(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            新建FTP客户端
+            </summary>
+            <param name="FTPIP">地址</param>
+            <param name="FTPPort">端口</param>
+            <param name="UrlRef">地址参数</param>
+            <param name="UserName">用户名</param>
+            <param name="Password">密码</param>
+            <param name="timeout">超时</param>
+        </member>
+        <member name="M:Win32CTC.FTPClient.SetUrl(System.String,System.Int32,System.String)">
+            <summary>
+            设置FTP服务器地址
+            </summary>
+            <param name="ip">IP地址</param>
+            <param name="port">端口</param>
+            <param name="Ref">地址参数</param>
+        </member>
+        <member name="M:Win32CTC.FTPClient.SetAuthor(System.String,System.String)">
+            <summary>
+            设置认证信息
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PassWord">密码</param>
+            <returns>错误代码，0成功，-1参数不正，-2密码不能为空</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.EditPassWord(System.String)">
+            <summary>
+            重输入密码
+            </summary>
+            <param name="PassWord">密码</param>
+            <returns>错误代码，0成功，-1参数不正，-2密码不能为空</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.ClearError">
+            <summary>
+            清除错误
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FTPClient.CreatDirectory(System.String)">
+            <summary>
+            创建目录
+            </summary>
+            <param name="FolderName">目录名</param>
+            <returns>执行结果，FTP返回码</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.DeleteDirectory(System.String)">
+            <summary>
+            删除目录
+            </summary>
+            <param name="FolderName">目录名</param>
+            <returns>执行结果，FTP返回码</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.RenameDirectory(System.String,System.String)">
+            <summary>
+            重命名目录
+            </summary>
+            <param name="FolderName">目录名</param>
+            <param name="NewFolderName">新文件名</param>
+            <returns>执行结果，FTP返回码</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.ListDirectory(System.String)">
+            <summary>
+            列出文件目录
+            </summary>
+            <param name="FolderName">目录名</param>
+            <returns>文件名列表</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.ListDirectoryDetails(System.String)">
+            <summary>
+            列出文件目录详细信息
+            </summary>
+            <param name="FolderName">目录名</param>
+            <returns>文件信息列表</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.FileSize(System.String,System.String)">
+            <summary>
+            获取远程文件大小
+            </summary>
+            <param name="FolderName">目录名</param>
+            <param name="FileName">文件名</param>
+            <returns>文件大小，字节</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.DeleteFile(System.String,System.String)">
+            <summary>
+            删除远程文件
+            </summary>
+            <param name="FolderName">目录名</param>
+            <param name="FileName">文件名</param>
+            <returns>执行结果，FTP返回码</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.UpLoadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            上传文件，带断点续传
+            </summary>
+            <param name="FolderName">目录名</param>
+            <param name="FileName">文件名</param>
+            <param name="LocalPath">本地路径</param>
+            <param name="LocalFile">本地文件名，为空则用FileName</param>
+            <param name="Checked">是否对比大小</param>
+            <param name="BufferSize">缓存大小</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:Win32CTC.FTPClient.DownLoadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            下载文件，带断点下载
+            </summary>
+            <param name="FolderName">目录名</param>
+            <param name="FileName">文件名</param>
+            <param name="LocalPath">本地路径</param>
+            <param name="LocalFile">本地文件名，为空则用FileName</param>
+            <param name="ReDownLoad">重新下载</param>
+            <param name="Checked">是否对比大小</param>
+            <param name="BufferSize">缓存大小</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="P:Win32CTC.FTPClient.IP">
+            <summary>
+            获取FTP服务器IP
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.Port">
+            <summary>
+            获取FTP服务器端口
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.UrlRef">
+            <summary>
+            获取地址参数
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.TimeOut">
+            <summary>
+            获取或设置超时
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.User">
+            <summary>
+            获取用户账户
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.UseAnyonemous">
+            <summary>
+            获取或设置是否使用匿名登录
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.UseMD5">
+            <summary>
+            获取或设置是否使用MD5加密
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.HadMD5">
+            <summary>
+            获取或设置密码是否已加密
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.Key">
+            <summary>
+            获取或设置密匙
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.Error">
+            <summary>
+            获取错误
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FTPClient.WellCome">
+            <summary>
+            获取欢迎信息
+            </summary>
+        </member>
+        <!-- 对于成员“M:Win32CTC.FtpSession.#ctor(System.Net.Sockets.Socket,Win32CTC.FtpServer,System.Int64)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Win32CTC.FtpSession.StartProcessing">
+             <summary>
+            启动函数
+             </summary>
+        </member>
+        <member name="M:Win32CTC.FtpSession.Close">
+            <summary>
+            关闭函数
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpSession.SafeMode(System.Boolean,System.String,System.Boolean)">
+            <summary>
+            安全模式
+            </summary>
+            <param name="Key"></param>
+            <param name="SourceSafe"></param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.NOOP">
+            <summary>
+              成功
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpSession.MKD(System.String)">
+            <summary>
+            创建目录
+            </summary>
+            <param name="argsText">目录名称</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.RNFR(System.String)">
+            <summary>
+            Juste avant un RNTO permet de sp閏ifi?le nom du fichier ?renomer
+            </summary>
+            <param name="argsText"></param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.RNTO(System.String)">
+            <summary>
+            Etape suivant le RNFR
+            </summary>
+            <param name="argsText"></param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.REST(System.String)">
+            <summary>
+            获取续传参数
+            </summary>
+            <param name="argsText">offset</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.APPE(System.String)">
+            <summary>
+            续传
+            </summary>
+            <param name="argsText">文件名</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.DELE(System.String)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="argsText">文件名</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.RMD(System.String)">
+            <summary>
+            删除目录
+            </summary>
+            <param name="argsText"></param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.STOR(System.String)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="argsText">文件名</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.RETR(System.String)">
+             <summary>
+            下载文件，带续传
+             </summary>
+             <param name="argsText">文件名</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.QUIT">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpSession.USER(System.String)">
+             <summary>
+            获取用户名
+             </summary>
+             <param name="argsText">login</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.PASS(System.String)">
+            <summary>
+            登陆验证
+            </summary>
+            <param name="argsText">Mot de passe</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.PWD">
+            <summary>
+            获取根目录
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpSession.SYST">
+             <summary>
+            服务器OS版本
+             </summary>
+        </member>
+        <member name="M:Win32CTC.FtpSession.TYPE(System.String)">
+             <summary>
+            传输方式 A为字符，I为二进制
+             </summary>
+             <param name="argsText">type</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.PORT(System.String)">
+            <summary>
+            主动模式
+            </summary>
+            <param name="argsText">suite de 6 octets (sous forme d閏imale) repr閟entant l'ip et le port. i1,i2,i3,i4,p1,p2  (avec p1 octet de poid fort et p2 octet de poid faible)</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.PASV">
+            <summary>
+            被动模式
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpSession.LIST(System.String)">
+            <summary>
+            列出文件位置信息
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpSession.SIZE(System.String)">
+            <summary>
+            列出文件大小
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.NLST(System.String)">
+            <summary>
+            列出文件名
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpSession.CWD(System.String)">
+            <summary>
+            定位
+            </summary>
+            <param name="args">R閜ertoire</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.GetDataConnection">
+            <summary>
+            Fonction permettant d'obtenir le socket de donn閑
+            </summary>
+            <returns>Socket de donn閑s</returns>
+        </member>
+        <member name="M:Win32CTC.FtpSession.SendData(System.String)">
+            <summary>
+            M閠hode permettant d'envoyer un message au client
+            </summary>
+            <param name="data">Message ?envoyer</param>
+        </member>
+        <member name="M:Win32CTC.FtpSession.ReadLine(System.Net.Sockets.Socket,System.Int32)">
+            <summary>
+            Fonction permettant de lire une commande tap閑 par le client.
+            </summary>
+            <param name="clientSocket">Socket du client</param>
+            <param name="timeOut">Nombre de secondes maximum pour la lecture</param>
+            <returns></returns>
+        </member>
+        <member name="M:Win32CTC.FtpSession.SwitchCommand(System.String)">
+             <summary>
+            命令转换为指令集
+             </summary>
+             <param name="commandTxt">文字指令</param>
+             <returns>指令</returns>
+        </member>
+        <member name="M:Win32CTC.FtpServer.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpServer.Start">
+            <summary>
+            启动
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpServer.Stop">
+             <summary>
+            停止
+             </summary>
+        </member>
+        <member name="M:Win32CTC.FtpServer.Stat">
+            <summary>
+            获取运行状态
+            </summary>
+            <returns>运行状态</returns>
+        </member>
+        <member name="M:Win32CTC.FtpServer.RemoveSession(System.Int64)">
+             <summary>
+            用户退出
+             </summary>
+             <param name="session">Session ?supprimer</param>
+        </member>
+        <member name="M:Win32CTC.FtpServer.AddUser(System.String,System.String,System.String)">
+            <summary>
+            添加账号信息
+            </summary>
+            <param name="UserName">账号名</param>
+            <param name="PassWord">密码</param>
+            <param name="folder">目录</param>
+        </member>
+        <member name="M:Win32CTC.FtpServer.DeleUser(System.String)">
+            <summary>
+            删除账号
+            </summary>
+            <param name="UserName">账号名</param>
+        </member>
+        <member name="M:Win32CTC.FtpServer.UserList">
+            <summary>
+            获取账号信息
+            </summary>
+            <returns>账号名</returns>
+        </member>
+        <!-- 对于成员“M:Win32CTC.FtpServer.UserSessionID(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Win32CTC.FtpServer.OnlineUser">
+            <summary>
+            获取当前在线账号
+            </summary>
+            <returns>账号名</returns>
+        </member>
+        <member name="M:Win32CTC.FtpServer.SafeModeOn(System.String,System.Boolean)">
+            <summary>
+            开启安全模式
+            </summary>
+            <param name="Key">密钥</param>
+            <param name="SourceSafe">是否对源加密</param>
+        </member>
+        <member name="M:Win32CTC.FtpServer.SafeModeOff">
+            <summary>
+            关闭安全模式
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpServer.UseAnyonemous(System.String)">
+            <summary>
+            使用匿名模式
+            </summary>
+            <param name="RootPath"></param>
+        </member>
+        <member name="M:Win32CTC.FtpServer.disableAnyonemous">
+            <summary>
+            禁用匿名模式
+            </summary>
+        </member>
+        <member name="M:Win32CTC.FtpServer.ClearError">
+            <summary>
+            清除错误
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FtpServer.IPAddress">
+            <summary>
+            绑定IP
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FtpServer.Language">
+            <summary>
+            显示语言
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FtpServer.MaxBadCommands">
+            <summary>
+            最大错误数
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FtpServer.Port">
+            <summary>
+            连接端口
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FtpServer.MaxThreads">
+            <summary>
+            最大连接数
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FtpServer.SessionIdleTimeOut">
+            <summary>
+            会话超时时间
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FtpServer.CommandIdleTimeOut">
+            <summary>
+            命令超时时间
+            </summary>
+        </member>
+        <member name="P:Win32CTC.FtpServer.Error">
+            <summary>
+            获取错误
+            </summary>
+        </member>
+        <member name="M:Win32CTC.HttpSdk.ClearError">
+            <summary>
+            清除错误
+            </summary>
+        </member>
+        <member name="M:Win32CTC.HttpSdk.GetHtml(System.String,System.Boolean)">
+            <summary>
+            获取URL上的HTML页面
+            </summary>
+            <param name="URL">地址</param>
+            <param name="Method">方式，使用POST或GET</param>
+            <param name="usesession">是否需要SESSION</param>
+            <returns>HTML代码</returns>
+        </member>
+        <member name="M:Win32CTC.HttpSdk.PostHtml(System.String,System.String,System.Boolean)">
+            <summary>
+            提交表单并返回URL上的HTML页面
+            </summary>
+            <param name="URL">地址</param>
+            <param name="Postdata">提交表单数据</param>
+            <param name="usesession">是否需要SESSION</param>
+            <returns>HTML代码</returns>
+        </member>
+        <member name="M:Win32CTC.HttpSdk.DownLoad(System.String,System.String,System.String,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            HTTP文件下载
+            </summary>
+            <param name="URL">文件HTTP地址，HTTP地址不支持中文字符，中午字符需要做URL编码</param>
+            <param name="SavePath">保存路径</param>
+            <param name="FileName">保存文件名，为空则</param>
+            <param name="usesession">是否需要SESSION</param>
+            <param name="ReDownLoad">是否覆盖原文件</param>
+            <param name="BufferSize">缓存大小</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:Win32CTC.HttpSdk.UpLoad(System.String,System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            HTTP文件上传
+            </summary>
+            <param name="URL">HTTP上传地址</param>
+            <param name="FileFullName">本地文件路径</param>
+            <param name="FileName">服务器文件名</param>
+            <param name="usesession">是否需要SESSION</param>
+            <param name="BufferSize">缓存大小</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="P:Win32CTC.HttpSdk.Error">
+            <summary>
+            获取错误
+            </summary>
+        </member>
+        <member name="M:Win32CTC.Security.ClearError">
+            <summary>
+            清除错误
+            </summary>
+        </member>
+        <member name="M:Win32CTC.Security.MD5(System.String,System.String)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.DesEncrypt(System.String,System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.DesEncryptByByte(System.String,System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.DesEncryptByte(System.Byte[],System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.DesDecrypt(System.String,System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.DesDecrypt(System.Byte[],System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.DesDecryptFromByte(System.Byte[],System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.DesDecryptByByte(System.Byte[],System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.TripeDesEncrypt(System.String,System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.TripeDesEncryptByByte(System.String,System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.TripeDesEncryptByte(System.Byte[],System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.TripeDesDecrypt(System.String,System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.TripeDesDecrypt(System.Byte[],System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.TripeDesDecryptByByte(System.Byte[],System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32CTC.Security.CRC16(System.Byte[],System.UInt16)">
+            <summary>
+            CRC16 
+            </summary>
+            <param name="data">校验数据</param>
+            <param name="key">多项式</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:Win32CTC.Security.CRC8(System.Byte[],System.Byte)">
+            <summary>
+            CRC8
+            </summary>
+            <param name="data">校验数据</param>
+            <param name="key">多项式</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:Win32CTC.Security.CRC32(System.Byte[],System.UInt32)">
+            <summary>
+            CRC32
+            </summary>
+            <param name="data">校验数据</param>
+            <param name="key">多项式</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:Win32CTC.Security.CRC32File(System.String,System.Int32)">
+            <summary>
+            文件CRC32
+            </summary>
+            <param name="FilePath">文件路径</param>
+            <param name="BufferSize">缓存大小</param>
+            <returns>CRC值</returns>
+        </member>
+        <member name="M:Win32CTC.Security.Xor(System.Byte[])">
+            <summary>
+            异或
+            </summary>
+            <param name="data">校验数据</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="P:Win32CTC.Security.Error">
+            <summary>
+            获取错误
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.Uart">
+            <summary>
+            串口号
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.Port">
+            <summary>
+            串口号
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.Rate">
+            <summary>
+            波特率
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.DataBit">
+            <summary>
+            数据位
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.Stopbit">
+            <summary>
+            停止位
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.Parity">
+            <summary>
+            校验
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.Ctrl">
+            <summary>
+            流控
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.ReTry">
+            <summary>
+            重试次数
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.ReSendTime">
+            <summary>
+            重发次数
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.ConnectTimeOut">
+            <summary>
+            连接超时时间，毫秒
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.WaitTime">
+            <summary>
+            等待时间，毫秒
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.Error">
+            <summary>
+            错误信息，读一次后自动清除
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.Connected">
+            <summary>
+            是否打开串口
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.SendTimeout">
+            <summary>
+            发送超时，毫秒
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.SendBufferSize">
+            <summary>
+            发送缓存区
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.ReceiveTimeout">
+            <summary>
+            读取超时，毫秒
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.ReceiveBufferSize">
+            <summary>
+            接收缓存区
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.BaseStream">
+            <summary>
+            获取基础对象流
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.BreakState">
+            <summary>
+            获取或设置中断信号
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.BytesToRead">
+            <summary>
+            获取接收缓存区还有多少数据未读
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.BytesToWrite">
+            <summary>
+            获取发送缓存区还有多少数据未发
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.CDHolding">
+            <summary>
+            获取载波检测行状态
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.CtsHolding">
+            <summary>
+            获取是否可以发送
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.DiscardNull">
+            <summary>
+            获取或设置忽略NULL
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.DsrHolding">
+            <summary>
+            获取就绪信号
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.ReceivedBytesThreshold">
+            <summary>
+            获取或设置触发时间的数据量
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SerialPortSDK.RtsEnable">
+            <summary>
+            获取或设置是否启用发送请求信号
+            </summary>
+        </member>
+        <member name="P:Win32CTC.SocketSDK.Error">
+            <summary>
+            错误信息，读一次后自动清除
+            </summary>
+        </member>
+        <member name="T:Win32CTC.ASyncSend">
+            <summary>
+            异步处理发送类
+            </summary>
+        </member>
+        <member name="T:Win32CTC.ASyncRecv">
+            <summary>
+            异常处理接收类
+            </summary>
+        </member>
+    </members>
+</doc>

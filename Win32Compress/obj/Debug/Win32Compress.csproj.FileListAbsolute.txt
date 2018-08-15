@@ -1,0 +1,39 @@
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32Compress\bin\Debug\Win32Compress.XML
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32Compress\bin\Debug\Win32Compress.dll
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32Compress\bin\Debug\Win32Compress.pdb
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32Compress\bin\Debug\Win32Compress.tlb
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32Compress\bin\Debug\SharpZipLib.dll
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32Compress\obj\Debug\ResolveAssemblyReference.cache
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32Compress\obj\Debug\Win32Compress.dll
+K:\我的最爱\Visual Studio 2010\Projects\GYUic\Win32Compress\obj\Debug\Win32Compress.pdb
+D:\GYUic\Win32Compress\bin\Debug\Win32Compress.XML
+D:\GYUic\Win32Compress\bin\Debug\Win32Compress.dll
+D:\GYUic\Win32Compress\bin\Debug\Win32Compress.pdb
+D:\GYUic\Win32Compress\bin\Debug\Win32Compress.tlb
+D:\GYUic\Win32Compress\bin\Debug\SharpZipLib.dll
+D:\GYUic\Win32Compress\obj\Debug\ResolveAssemblyReference.cache
+D:\GYUic\Win32Compress\obj\Debug\Win32Compress.dll
+D:\GYUic\Win32Compress\obj\Debug\Win32Compress.pdb
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32Compress\bin\Debug\Win32Compress.XML
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32Compress\bin\Debug\Win32Compress.dll
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32Compress\bin\Debug\Win32Compress.pdb
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32Compress\bin\Debug\Win32Compress.tlb
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32Compress\bin\Debug\SharpZipLib.dll
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32Compress\obj\Debug\Win32Compress.dll
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32Compress\obj\Debug\Win32Compress.pdb
+H:\Project\Visual Studio 2012\Projects\CommClass\Win32Compress\obj\Debug\Win32Compress.csprojResolveAssemblyReference.cache
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32Compress\bin\Debug\Win32Compress.XML
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32Compress\bin\Debug\Win32Compress.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32Compress\bin\Debug\Win32Compress.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32Compress\bin\Debug\SharpZipLib.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32Compress\obj\Debug\Win32Compress.csprojResolveAssemblyReference.cache
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32Compress\obj\Debug\Win32Compress.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\Win32Compress\obj\Debug\Win32Compress.pdb
+J:\Project\DotNet\CommClass\Win32Compress\bin\Debug\Win32Compress.XML
+J:\Project\DotNet\CommClass\Win32Compress\bin\Debug\Win32Compress.dll
+J:\Project\DotNet\CommClass\Win32Compress\bin\Debug\Win32Compress.pdb
+J:\Project\DotNet\CommClass\Win32Compress\bin\Debug\Win32Compress.tlb
+J:\Project\DotNet\CommClass\Win32Compress\bin\Debug\SharpZipLib.dll
+J:\Project\DotNet\CommClass\Win32Compress\obj\Debug\Win32Compress.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CommClass\Win32Compress\obj\Debug\Win32Compress.dll
+J:\Project\DotNet\CommClass\Win32Compress\obj\Debug\Win32Compress.pdb

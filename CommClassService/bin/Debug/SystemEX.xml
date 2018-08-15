@@ -1,0 +1,588 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SystemEX</name>
+    </assembly>
+    <members>
+        <member name="T:LinqToDB.Mapping.DisplayColumnAttribute">
+            <summary>
+            显示字段属性
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.Name">
+            <summary>
+            显示名
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.Format">
+            <summary>
+            显示格式,TOSTRING表达式或正则表达式
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.CSS">
+            <summary>
+            样式
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.CanSearch">
+            <summary>
+            是否用于搜索
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.CanHead">
+            <summary>
+            是否用于表头显示
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.CanCount">
+            <summary>
+            是否用于统计
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.CanImpExp">
+            <summary>
+            是否可用于导入导出
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.IsUnique">
+            <summary>
+            是否唯一
+            </summary>
+        </member>
+        <member name="P:LinqToDB.Mapping.DisplayColumnAttribute.Seqencing">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:System.ClassEX">
+            <summary>
+            扩展类
+            </summary>
+        </member>
+        <member name="M:System.ClassEX.ToStringN(System.Object)">
+            <summary>
+            强转非空字符串
+            </summary>
+            <param name="obj">字符串</param>
+            <returns>非空字符串</returns>
+        </member>
+        <member name="M:System.ClassEX.IsNull(System.Object)">
+            <summary>
+            对象是否为空
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ClassEX.IsNullOrEmpty(System.String)">
+            <summary>
+            是否空字符串
+            </summary>
+            <param name="str">字符串</param>
+            <returns>是否空字符串</returns>
+        </member>
+        <member name="M:System.ClassEX.IsNullOrWhiteSpace(System.String)">
+            <summary>
+            是否有空格
+            </summary>
+            <param name="str">字符串</param>
+            <returns>是否有空格</returns>
+        </member>
+        <member name="M:System.ClassEX.IsMatch(System.String,System.String)">
+            <summary>
+            正则表达式
+            </summary>
+            <param name="str">字符串</param>
+            <param name="pattern">表达式</param>
+            <returns>是否符合</returns>
+        </member>
+        <member name="M:System.ClassEX.ToInteger(System.String)">
+            <summary>
+            字符串转INT
+            </summary>
+            <param name="obj">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ClassEX.ToHex(System.Byte[],System.Boolean)">
+            <summary>
+            byte转十六进制字符串
+            </summary>
+            <param name="data">数据</param>
+            <param name="SpaceSplit">是否空格分割</param>
+            <returns>十六进制字符串</returns>
+        </member>
+        <member name="M:System.ClassEX.FromHex(System.String)">
+            <summary>
+            十六进制字符串转byte数组
+            </summary>
+            <param name="data">十六进制字符串</param>
+            <returns>byte数组</returns>
+        </member>
+        <member name="M:System.ClassEX.ToBase64(System.Byte[])">
+            <summary>
+            byte数组转Base64
+            </summary>
+            <param name="data">数据</param>
+            <returns>Base64</returns>
+        </member>
+        <member name="M:System.ClassEX.FromBase64(System.String)">
+            <summary>
+             BASE64转byte数组
+            </summary>
+            <param name="data">BASE64</param>
+            <returns>byte数组</returns>
+        </member>
+        <member name="M:System.ClassEX.ToBytes(System.String,System.Text.Encoding)">
+            <summary>
+            字符串转byte[]
+            </summary>
+            <param name="data">数据</param>
+            <param name="Encode">字符串编码</param>
+            <returns>byte[]</returns>
+        </member>
+        <member name="M:System.ClassEX.FormBytes(System.Byte[],System.Text.Encoding)">
+            <summary>
+            byte数组转字符串
+            </summary>
+            <param name="data">byte数组</param>
+            <param name="Encode">字符串编码</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:System.ClassEX.ToDateTime(System.String)">
+            <summary>
+            字符串转时间
+            </summary>
+            <param name="data">时间字符串</param>
+            <returns>时间</returns>
+        </member>
+        <member name="M:System.ClassEX.ToTimeString(System.DateTime,System.String)">
+            <summary>
+            转换为时间字符串
+            </summary>
+            <param name="data">时间</param>
+            <param name="Format">字符串格式</param>
+            <returns>标准时间字符串</returns>
+        </member>
+        <member name="M:System.ClassEX.intToBytes(System.Int32)">
+            <summary>
+            int 转数组
+            </summary>
+            <param name="data">int</param>
+            <returns> 数组</returns>
+        </member>
+        <member name="M:System.ClassEX.intFormByte(System.Byte[])">
+            <summary>
+            数组转INT
+            </summary>
+            <param name="data">数组</param>
+            <returns>INT</returns>
+        </member>
+        <member name="M:System.ClassEX.ToJSON(System.Data.DataTable)">
+            <summary>
+            DataTable转JSON
+            </summary>
+            <param name="DT">DataTable</param>
+            <returns>JSON</returns>
+        </member>
+        <member name="M:System.ClassEX.ToXML(System.Data.DataTable)">
+            <summary>
+            DataTable转XML
+            </summary>
+            <param name="DT">DataTable</param>
+            <returns>XML</returns>
+        </member>
+        <member name="T:System.EntityEX">
+            <summary>
+            实体扩展
+            </summary>
+        </member>
+        <member name="M:System.EntityEX.ToTableName(System.Object)">
+            <summary>
+            获取映射表名
+            </summary>
+            <param name="obj">实体</param>
+            <returns>映射表名，没有则返回类名</returns>
+        </member>
+        <member name="M:System.EntityEX.ToDescription(System.Object)">
+            <summary>
+            获取类型的描述
+            </summary>
+            <param name="obj">实体</param>
+            <returns>返回对象描述，无则显示类名</returns>
+        </member>
+        <member name="M:System.EntityEX.ToDisplayName(System.Object)">
+            <summary>
+            获取类型的显示名称
+            </summary>
+            <param name="obj">实体</param>
+            <returns>返回对象描述</returns>
+        </member>
+        <member name="M:System.EntityEX.ToDictionary(System.Object)">
+            <summary>
+            列出类所有属性
+            </summary>
+            <param name="obj">实体</param>
+            <returns>属性和值</returns>
+        </member>
+        <member name="M:System.EntityEX.ToHeaderList(System.Object,System.Boolean)">
+            <summary>
+            实体的显示标题列
+            </summary>
+            <param name="obj">实体</param>
+            <param name="NeedAttribute">是否需要有显示属性标签</param>
+            <returns>标签列表，实体属性-显示名</returns>
+        </member>
+        <member name="M:System.EntityEX.ToSearchList(System.Object,System.Boolean)">
+            <summary>
+            实体的查询列
+            </summary>
+            <param name="obj">实体</param>
+            <param name="NeedAttribute">是否需要有显示属性标签</param>
+            <returns>标签列表，实体属性-显示名</returns>
+        </member>
+        <member name="M:System.EntityEX.ToChoutList(System.Object,System.Boolean)">
+            <summary>
+            实体的查询列
+            </summary>
+            <param name="obj">实体</param>
+            <param name="NeedAttribute">是否需要有显示属性标签</param>
+            <returns>标签列表，实体属性-显示名</returns>
+        </member>
+        <member name="M:System.EntityEX.ToImpExpList(System.Object,System.Boolean)">
+            <summary>
+            实体的导入导出列
+            </summary>
+            <param name="obj">实体</param>
+            <param name="NeedAttribute">是否需要有显示属性标签</param>
+            <returns>标签列表，实体属性-显示名</returns>
+        </member>
+        <member name="T:System.EntityProperty">
+            <summary>
+            实体属性扩展
+            </summary>
+        </member>
+        <member name="M:System.EntityProperty.ToDescripfiled(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性类型的描述
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>返回对象描述，没有字段属性则显示属性名</returns>
+        </member>
+        <member name="M:System.EntityProperty.ToDisplayfiled(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性类型的显示名
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>返回属性类型的显示名，没有字段属性则显示属性名</returns>
+        </member>
+        <member name="M:System.EntityProperty.ToColumnName(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性类型的映射表中的字段
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>映射表中的字段,空为找不到属性，没有字段属性则显示属性名</returns>
+        </member>
+        <member name="M:System.EntityProperty.IsPrimaryKey(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性类型是否主键
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>是否主键</returns>
+        </member>
+        <member name="M:System.EntityProperty.CanBeNull(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性类型是否可空
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>是否可空</returns>
+        </member>
+        <member name="M:System.EntityProperty.ToDisplayColumn(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性显示字段
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>显示字段,空为找不到属性，没有字段属性则显示属性名</returns>
+        </member>
+        <member name="M:System.EntityProperty.ToDisplayColumnFormat(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性显示字段格式
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>显示字段格式</returns>
+        </member>
+        <member name="M:System.EntityProperty.ToDisplayCSS(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性显示样式
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>显示样式</returns>
+        </member>
+        <member name="M:System.EntityProperty.IsCanHead(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性显示是否用于表头
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>是否用于表头</returns>
+        </member>
+        <member name="M:System.EntityProperty.IsCanSearch(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性显示是否用于搜索
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>是否用于表头</returns>
+        </member>
+        <member name="M:System.EntityProperty.IsCanCount(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性显示是否用于统计
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>是否用于统计</returns>
+        </member>
+        <member name="M:System.EntityProperty.IsCanImpExp(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性显示是否用于导入导出
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>是否用于表头</returns>
+        </member>
+        <member name="M:System.EntityProperty.IsCanUnique(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取属性显示是否用于导入导出
+            </summary>
+            <param name="entity">类</param>
+            <param name="filed">属性字段</param>
+            <param name="IgnoreCase">忽略大小写</param>
+            <returns>是否用于表头</returns>
+        </member>
+        <member name="T:System.EnumEx">
+            <summary>
+            枚举类
+            </summary>
+        </member>
+        <member name="M:System.EnumEx.EnumToList(System.Enum)">
+            <summary>
+            列出枚举及值
+            </summary>
+            <param name="em">枚举</param>
+            <returns>名称和值</returns>
+        </member>
+        <member name="M:System.EnumEx.EnumDescToList(System.Enum)">
+            <summary>
+             列出枚举描述及值
+            </summary>
+            <param name="em">枚举</param>
+            <returns>枚举描述及值</returns>
+        </member>
+        <member name="T:System.EnumProperty">
+            <summary>
+            枚举成员扩展类
+            </summary>
+        </member>
+        <member name="M:System.EnumProperty.ToDiscription(System.Enum)">
+            <summary>
+            显示描述
+            </summary>
+            <param name="myEnum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Linq.Expressions.LinqExpression">
+            <summary>
+            Lamda表达式扩展
+            </summary>
+        </member>
+        <member name="M:System.Linq.Expressions.LinqExpression.True``1">
+            <summary>
+            新建TRUE表达式
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <returns>表达式</returns>
+        </member>
+        <member name="M:System.Linq.Expressions.LinqExpression.False``1">
+            <summary>
+            新建TRUE表达式
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <returns>表达式</returns>
+        </member>
+        <member name="M:System.Linq.Expressions.LinqExpression.True``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+                true    
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="expr">表达式</param>
+            <returns>TRUE表达式</returns>
+        </member>
+        <member name="M:System.Linq.Expressions.LinqExpression.False``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            false
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="expr">表达式</param>
+            <returns>False表达式</returns>
+        </member>
+        <member name="M:System.Linq.Expressions.LinqExpression.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            AND连接
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="expr1">表达式1</param>
+            <param name="expr2">表达式2</param>
+            <returns>合并后AND表达式</returns>
+        </member>
+        <member name="M:System.Linq.Expressions.LinqExpression.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            OR 连接
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="expr1">表达式1</param>
+            <param name="expr2">表达式2</param>
+            <returns>合并后OR表达式</returns>
+        </member>
+        <member name="T:System.ClassTransform.DATATABLE">
+            <summary>
+            DataTable  转换类
+            </summary>
+        </member>
+        <member name="M:System.ClassTransform.DATATABLE.ToEntity``1(System.Data.DataTable,System.Boolean)">
+            <summary>
+            DATATABLE转实体
+            </summary>
+            <typeparam name="T">实体</typeparam>
+            <param name="DT">DATATABLE</param>
+            <param name="NeedAttribute">是否需要通过数据属性标识转换，默认是</param>
+            <returns>实体列表</returns>
+        </member>
+        <member name="M:System.ClassTransform.DATATABLE.FromEntity``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            实体转DT
+            </summary>
+            <typeparam name="T">实体</typeparam>
+            <param name="LS">实体列表</param>
+            <returns>DATATABLE</returns>
+        </member>
+        <member name="M:System.ClassTransform.DATATABLE.ToXML(System.Data.DataTable)">
+            <summary>
+            DataTable转XML
+            </summary>
+            <param name="DT">DATATABLE</param>
+            <returns>XML</returns>
+        </member>
+        <member name="M:System.ClassTransform.DATATABLE.ToJSON(System.Data.DataTable)">
+            <summary>
+            DataTable转JSON
+            </summary>
+            <param name="DT">DataTable</param>
+            <returns>JSON</returns>
+        </member>
+        <member name="T:System.ClassTransform.JSON">
+            <summary>
+            JSON转换类
+            </summary>
+        </member>
+        <member name="M:System.ClassTransform.JSON.ConvertJsonDateToDateString(System.Text.RegularExpressions.Match)">
+            <summary>    
+            将Json序列化的时间由/Date(1294499956278+0800)转为字符串    
+            </summary>    
+        </member>
+        <member name="M:System.ClassTransform.JSON.ConvertDateStringToJsonDate(System.Text.RegularExpressions.Match)">
+            <summary>    
+            将时间字符串转为Json时间    
+            </summary>    
+        </member>
+        <member name="M:System.ClassTransform.JSON.ToJson``1(``0)">
+            <summary>
+            类转JSON串
+            </summary>
+            <typeparam name="T">类</typeparam>
+            <param name="t">类型</param>
+            <returns>JSON串</returns>
+        </member>
+        <member name="M:System.ClassTransform.JSON.ToJson``1(System.Collections.Generic.List{``0})">
+            <summary>
+            类转JSON串
+            </summary>
+            <typeparam name="T">类</typeparam>
+            <param name="t">类型</param>
+            <returns>JSON串</returns>
+        </member>
+        <member name="M:System.ClassTransform.JSON.FromJson``1(System.String)">
+            <summary>
+            JSON串转类
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="strJson">JSON串</param>
+            <returns>类</returns>
+        </member>
+        <member name="M:System.ClassTransform.JSON.FromJsons``1(System.String)">
+            <summary>
+            JSON串转类
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="strJson">JSON串</param>
+            <returns>类</returns>
+        </member>
+        <member name="M:System.ClassTransform.JSON.JsonToDataSet(System.String)">
+            <summary>
+            JSON转DataSet
+            </summary>
+            <param name="Json">JSON串</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="T:System.ClassTransform.XML">
+            <summary>
+            XML转换类
+            </summary>
+        </member>
+        <member name="M:System.ClassTransform.XML.ToXML``1(``0)">
+            <summary>
+            实体转XML
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="t">实体</param>
+            <returns>xml</returns>
+        </member>
+        <member name="M:System.ClassTransform.XML.FromXML``1(System.String)">
+            <summary>
+            XML转实体
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="xml">xml</param>
+            <returns>实体</returns>
+        </member>
+        <member name="M:System.ClassTransform.XML.FromXML(System.String)">
+            <summary>
+            XML转DATASET
+            </summary>
+            <param name="xml">xml</param>
+            <returns>DATASET</returns>
+        </member>
+    </members>
+</doc>

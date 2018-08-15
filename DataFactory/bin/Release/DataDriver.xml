@@ -1,0 +1,452 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DataDriver
+</name>
+</assembly>
+<members>
+<member name="M:DataDriver.MySQL.GetConnection">
+	<summary>
+ 数据库连接打开
+ fzbpk
+ 2010.09.14
+ </summary>
+	<returns>已打开MySqlConnection类</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.CloseConnection(System.Data.Common.DbConnection)">
+	<summary>
+ 数据库连接关闭
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="conn">打开的数据库连接</param>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.CheckConnection(System.String@)">
+	<summary>
+ 检查数据库连接是否连接成功
+ </summary>
+	<param name="ErrMsg">错误信息</param>
+	<returns>是否连接成功</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.ExecuteNonQuery(System.String)">
+	<summary>
+ 数据库Insert,update,delete带返回执行数
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">SQL语句</param>
+	<returns>影响数量</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.getDataTable(System.String)">
+	<summary>
+ 获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.getDataTable(System.String,System.Int32@)">
+	<summary>
+  获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<param name="RecCount">返回查询记录数</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.getDataTable(System.String,System.Int32,System.Int32@)">
+	<summary>
+ 获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<param name="PageSize">分页大小</param>
+	<param name="PageCount">返回总页数</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+	<summary>
+  获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<param name="PageSize">分页大小</param>
+	<param name="RecCount">返回查询记录数</param>
+	<param name="PageCount">返回总页数</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.IsExist(System.String)">
+	<summary>
+ 判断是否存在记录
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询数据库</param>
+	<returns>Boolean,TRUE为存在，False为不存在</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.Find(System.String)">
+	<summary>
+ 查询数据记录
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<returns>以字符串数组方式返回第一行查询数据</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.ExecuteScalar(System.String)">
+	<summary>
+ 查询记录
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<returns>以字符串方式返回第一行第一列数据</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.TableIsExist(System.String)">
+	<summary>
+ 查询表是否存在
+ </summary>
+	<param name="TableName">表名称</param>
+	<returns>是否存在</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+	<summary>
+ 利用内存分页因此适合数据小但SQL语句复杂的查询
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="PageIndex">当前页</param>
+	<param name="PageSize">分页大小</param>
+	<param name="DisplayField">字段列，每个字段用,分开</param>
+	<param name="tablename">表名，支持（） k 视图方式</param>
+	<param name="Where">查询条件，不带关键字WHERE</param>
+	<param name="OrderBy">排序语句，带order by</param>
+	<param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+	<param name="RecodeCount">返回总记录数</param>
+	<param name="PageCount">返回总记录数</param>
+	<returns>查询结果DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MySQL.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@,System.Boolean)">
+	<summary>
+ DS分页，利用内存分页因此适合数据小但SQL语句复杂的查询
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="PageIndex">当前页</param>
+	<param name="PageSize">分页大小</param>
+	<param name="DisplayField">字段列，每个字段用,分开</param>
+	<param name="tablename">表名，支持（） k 视图方式</param>
+	<param name="Where">查询条件，不带关键字WHERE</param>
+	<param name="OrderField">排序字段</param>
+	<param name="OrderBy">排序语句，带order by</param>
+	<param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+	<param name="RecodeCount">返回记录数</param>
+	<param name="PageCount">返回页数</param>
+	<returns>查询结果DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.GetConnection">
+	<summary>
+ 数据库连接打开
+ fzbpk
+ 2010.09.14
+ </summary>
+	<returns>已打开MySqlConnection类</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.CloseConnection(System.Data.Common.DbConnection)">
+	<summary>
+ 数据库连接关闭
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="conn">打开的数据库连接</param>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.CheckConnection(System.String@)">
+	<summary>
+ 检查数据库连接是否连接成功
+ </summary>
+	<param name="ErrMsg">错误信息</param>
+	<returns>是否连接成功</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.ExecuteNonQuery(System.String)">
+	<summary>
+ 数据库Insert,update,delete带返回执行数
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">SQL语句</param>
+	<returns>影响数量</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.getDataTable(System.String)">
+	<summary>
+ 获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.getDataTable(System.String,System.Int32@)">
+	<summary>
+  获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<param name="RecCount">返回查询记录数</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.getDataTable(System.String,System.Int32,System.Int32@)">
+	<summary>
+ 获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<param name="PageSize">分页大小</param>
+	<param name="PageCount">返回总页数</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+	<summary>
+  获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<param name="PageSize">分页大小</param>
+	<param name="RecCount">返回查询记录数</param>
+	<param name="PageCount">返回总页数</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.IsExist(System.String)">
+	<summary>
+ 判断是否存在记录
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询数据库</param>
+	<returns>Boolean,TRUE为存在，False为不存在</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.Find(System.String)">
+	<summary>
+ 查询数据记录
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<returns>以字符串数组方式返回第一行查询数据</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.ExecuteScalar(System.String)">
+	<summary>
+ 查询记录
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<returns>以字符串方式返回第一行第一列数据</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.TableIsExist(System.String)">
+	<summary>
+ 查询表是否存在
+ </summary>
+	<param name="TableName">表名称</param>
+	<returns>是否存在</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+	<summary>
+ 利用内存分页因此适合数据小但SQL语句复杂的查询
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="PageIndex">当前页</param>
+	<param name="PageSize">分页大小</param>
+	<param name="DisplayField">字段列，每个字段用,分开</param>
+	<param name="tablename">表名，支持（） k 视图方式</param>
+	<param name="Where">查询条件，不带关键字WHERE</param>
+	<param name="OrderBy">排序语句，带order by</param>
+	<param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+	<param name="RecodeCount">返回总记录数</param>
+	<param name="PageCount">返回总记录数</param>
+	<returns>查询结果DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.MSSQL.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+	<summary>
+ DS分页，利用内存分页因此适合数据小但SQL语句复杂的查询
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="PageIndex">当前页</param>
+	<param name="PageSize">分页大小</param>
+	<param name="DisplayField">字段列，每个字段用,分开</param>
+	<param name="tablename">表名，支持（） k 视图方式</param>
+	<param name="Where">查询条件，不带关键字WHERE</param>
+	<param name="OrderField">排序字段</param>
+	<param name="OrderBy">排序语句，带order by</param>
+	<param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+	<param name="RecodeCount">返回记录数</param>
+	<param name="PageCount">返回页数</param>
+	<returns>查询结果DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.GetConnection">
+	<summary>
+ 数据库连接打开
+ fzbpk
+ 2010.09.14
+ </summary>
+	<returns>已打开MySqlConnection类</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.CloseConnection(System.Data.Common.DbConnection)">
+	<summary>
+ 数据库连接关闭
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="conn">打开的数据库连接</param>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.CheckConnection(System.String@)">
+	<summary>
+ 检查数据库连接是否连接成功
+ </summary>
+	<param name="ErrMsg">错误信息</param>
+	<returns>是否连接成功</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.ExecuteNonQuery(System.String)">
+	<summary>
+ 数据库Insert,update,delete带返回执行数
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">SQL语句</param>
+	<returns>影响数量</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.getDataTable(System.String)">
+	<summary>
+ 获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.getDataTable(System.String,System.Int32@)">
+	<summary>
+  获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<param name="RecCount">返回查询记录数</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.getDataTable(System.String,System.Int32,System.Int32@)">
+	<summary>
+ 获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<param name="PageSize">分页大小</param>
+	<param name="PageCount">返回总页数</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+	<summary>
+  获取查询数据
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<param name="PageSize">分页大小</param>
+	<param name="RecCount">返回查询记录数</param>
+	<param name="PageCount">返回总页数</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.IsExist(System.String)">
+	<summary>
+ 判断是否存在记录
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询数据库</param>
+	<returns>Boolean,TRUE为存在，False为不存在</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.Find(System.String)">
+	<summary>
+ 查询数据记录
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<returns>以字符串数组方式返回第一行查询数据</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.ExecuteScalar(System.String)">
+	<summary>
+ 查询记录
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="sql">查询SQL</param>
+	<returns>返回第一行第一列数据</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.TableIsExist(System.String)">
+	<summary>
+ 查询表是否存在
+ </summary>
+	<param name="TableName">表名称</param>
+	<returns>是否存在</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+	<summary>
+ 利用内存分页因此适合数据小但SQL语句复杂的查询
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="PageIndex">当前页</param>
+	<param name="PageSize">分页大小</param>
+	<param name="DisplayField">字段列，每个字段用,分开</param>
+	<param name="tablename">表名，支持（） k 视图方式</param>
+	<param name="Where">查询条件，不带关键字WHERE</param>
+	<param name="OrderBy">排序语句，带order by</param>
+	<param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+	<param name="RecodeCount">返回总记录数</param>
+	<param name="PageCount">返回总记录数</param>
+	<returns>查询结果DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:DataDriver.Access.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+	<summary>
+ DS分页，利用内存分页因此适合数据小但SQL语句复杂的查询
+ fzbpk
+ 2010.09.14
+ </summary>
+	<param name="PageIndex">当前页</param>
+	<param name="PageSize">分页大小</param>
+	<param name="DisplayField">字段列，每个字段用,分开</param>
+	<param name="tablename">表名，支持（） k 视图方式</param>
+	<param name="Where">查询条件，不带关键字WHERE</param>
+	<param name="OrderField">排序字段</param>
+	<param name="OrderBy">排序语句，带order by</param>
+	<param name="RecodeCount">返回记录数</param>
+	<param name="PageCount">返回页数</param>
+	<returns>查询结果DataSet</returns>
+	<remarks></remarks>
+</member><member name="P:DataDriver.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DataDriver.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DataDriver.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

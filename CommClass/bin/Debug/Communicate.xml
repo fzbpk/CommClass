@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Communicate</name>
+    </assembly>
+    <members>
+        <member name="T:System.Communicate.SocketSDK">
+            <summary>
+            TCPIP通讯类
+            </summary>
+        </member>
+        <member name="T:System.Communicate.SocketSDK.Socket_ASyncRecvedEven">
+            <summary>
+            异步接收事件
+            </summary>
+            <param name="socket">Socket连接</param>
+        </member>
+        <member name="E:System.Communicate.SocketSDK.ASyncRecved">
+            <summary>
+            异步接收事件
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.#ctor">
+            <summary>
+             TCPIP通讯类
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.#ctor(System.Net.Sockets.AddressFamily,System.Net.Sockets.SocketType,System.Net.Sockets.ProtocolType)">
+            <summary>
+             TCPIP通讯类
+            </summary>
+            <param name="address_family">地址类型</param>
+            <param name="socket_type">SOCKET类型</param>
+            <param name="protocol_type">协议类型</param>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Dispose(System.Boolean)">
+            <summary>
+            释放连接
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.PingCheck">
+            <summary>
+            是否启用连接前PING
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.PingTimes">
+            <summary>
+            PING次数
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ReSendTime">
+            <summary>
+            重发时间
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.AsyncSendWait">
+            <summary>
+            异步发送等待时间
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.Socket">
+            <summary>
+            转换Socket
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.Error">
+            <summary>
+            错误信息，读一次后自动清除
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ReTry">
+            <summary>
+            重试次数
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.IP">
+            <summary>
+            目标IP
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.Port">
+            <summary>
+            目标端口
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ASyncRecvState">
+            <summary>
+            异步接收是否启用
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ASyncListCount">
+            <summary>
+            异步发送队列剩余数
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ASyncState">
+            <summary>
+            异步发送状态
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ASyncErrMessage">
+            <summary>
+            异步通信错误
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.Connected">
+            <summary>
+            是否已连接
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.IsBound">
+            <summary>
+            是否已绑定
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.Available">
+            <summary>
+            获取可接收字节数
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.Blocking">
+            <summary>
+            获取或设置阻塞状态
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.DontFragment">
+            <summary>
+            获取或设置数据是否分包
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.SendTimeout">
+            <summary>
+            获取或设置发送超时，ms
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.SendBufferSize">
+            <summary>
+            获取或设置发送缓存区，B
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ReceiveTimeout">
+            <summary>
+            获取或设置接收超时
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ReceiveBufferSize">
+            <summary>
+            获取或设置接收缓存区，B
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.MaxConnect">
+            <summary>
+            获取或设置最大连接数
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ConnectTimeOut">
+            <summary>
+            获取或设置连接超时
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.WaitTime">
+            <summary>
+            获取或设置等待超时
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.ExclusiveAddressUse">
+            <summary>
+            获取或设置是否允许多播
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.SendEnable">
+            <summary>
+            获取是否可以发送
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.KeepAlive">
+            <summary>
+            获取或设置启用保持连接
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.LocalIPAddress">
+            <summary>
+            获取本机所有IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:System.Communicate.SocketSDK.RemoteEndPoint">
+            <summary>
+            获取远端连接
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.SetIPAddress(System.String,System.Int32)">
+            <summary>
+            设置IP和端口
+            </summary>
+            <param name="IP">IP，空为0.0.0.0</param>
+            <param name="Port">端口</param>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Open">
+            <summary>
+            打开远程连接
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.ReOpen(System.Boolean)">
+            <summary>
+            重连接
+            </summary>
+            <param name="Auto">是否开启自动配置</param>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Open(System.String,System.Int32)">
+            <summary>
+            打开目标连接
+            </summary>
+            <param name="IP">IP</param>
+            <param name="Port">端口</param>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Bind">
+            <summary>
+            绑定并监听端口
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.ReBind(System.Boolean)">
+            <summary>
+            绑定并监听端口
+            </summary>
+            <param name="Auto">是否开启自动配置</param>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Bind(System.String,System.Int32)">
+            <summary>
+            绑定并监听端口
+            </summary>
+            <param name="IP">IP</param>
+            <param name="Port">端口</param>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Close">
+            <summary>
+            关闭连接
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.AcceptAs">
+            <summary>
+            接收到新连接
+            </summary>
+            <returns>Socket</returns>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Accept">
+            <summary>
+            接收到新连接
+            </summary>
+            <returns>SocketSDK</returns>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.SendBytes(System.Byte[])">
+            <summary>
+            发送数据
+            </summary>
+            <param name="Data">数据</param>
+            <returns>发送量</returns>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.SendBytesReply(System.Byte[],System.Boolean)">
+            <summary>
+            发送并接收数据
+            </summary>
+            <param name="Data">发送数据</param>
+            <returns>接收数据</returns>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Receive(System.Byte[]@,System.Boolean)">
+            <summary>
+            接收数据
+            </summary>
+            <param name="buffer">接收数据</param>
+            <param name="legacy">传统接收</param>
+            <returns>数据量</returns>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.SendString(System.String,System.Boolean,System.String)">
+            <summary>
+            发送字符串
+            </summary>
+            <param name="Data">字符串</param>
+            <param name="NewLine">是否回车换行</param>
+            <param name="Encode">文字编码</param>
+            <returns>发送数量</returns>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.Receive(System.String,System.Boolean)">
+            <summary>
+            接收字符串
+            </summary>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.ASyncSendBytes(System.Byte[])">
+            <summary>
+            异步发送
+            </summary>
+            <param name="Data">发送数据</param>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.ASyncSendStop">
+            <summary>
+            异步发送停止
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.ASyncRecvStart">
+            <summary>
+            异步接收开启
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SocketSDK.ASyncRecvStop">
+            <summary>
+            异步接收停止
+            </summary>
+        </member>
+        <member name="T:System.Communicate.Socket_ASyncSend">
+            <summary>
+            异步处理发送类
+            </summary>
+        </member>
+        <member name="T:System.Communicate.Socket_ASyncRecv">
+            <summary>
+            异常处理接收类
+            </summary>
+        </member>
+        <member name="T:System.Communicate.SerialPortSDK">
+            <summary>
+            串口通讯类
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.#ctor">
+            <summary>
+            串口通讯类
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.#ctor(System.Int32,System.Int32,System.Int32,System.IO.Ports.StopBits,System.IO.Ports.Parity,System.IO.Ports.Handshake)">
+            <summary>
+            串口通讯类
+            </summary>
+            <param name="ComPort">端口号</param>
+            <param name="ComRate">波特率</param>
+            <param name="Databits">数据位</param>
+            <param name="Stopbits">停止位</param>
+            <param name="Parity">校验</param>
+            <param name="ctrl">流控</param>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.Dispose(System.Boolean)">
+            <summary>
+            释放连接
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.Uart">
+            <summary>
+            串口
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.Port">
+            <summary>
+            串口号
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.Rate">
+            <summary>
+            波特率
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.DataBit">
+            <summary>
+            数据位
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.Stopbit">
+            <summary>
+            停止位
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.Parity">
+            <summary>
+            校验
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.Ctrl">
+            <summary>
+            流控
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.ReTry">
+            <summary>
+            重试次数
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.ConnectTimeOut">
+            <summary>
+            连接超时时间，毫秒
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.WaitTime">
+            <summary>
+            等待时间，毫秒
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.Error">
+            <summary>
+            错误信息，读一次后自动清除
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.Connected">
+            <summary>
+            是否打开串口
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.SendTimeout">
+            <summary>
+            发送超时，毫秒
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.SendBufferSize">
+            <summary>
+            发送缓存区
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.ReceiveTimeout">
+            <summary>
+            读取超时，毫秒
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.ReceiveBufferSize">
+            <summary>
+            接收缓存区
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.BaseStream">
+            <summary>
+            获取基础对象流
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.BreakState">
+            <summary>
+            获取或设置中断信号
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.BytesToRead">
+            <summary>
+            获取接收缓存区还有多少数据未读
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.BytesToWrite">
+            <summary>
+            获取发送缓存区还有多少数据未发
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.CDHolding">
+            <summary>
+            获取载波检测行状态
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.CtsHolding">
+            <summary>
+            获取是否可以发送
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.DiscardNull">
+            <summary>
+            获取或设置忽略NULL
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.DsrHolding">
+            <summary>
+            获取就绪信号
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.ReceivedBytesThreshold">
+            <summary>
+            获取或设置触发时间的数据量
+            </summary>
+        </member>
+        <member name="P:System.Communicate.SerialPortSDK.RtsEnable">
+            <summary>
+            获取或设置是否启用发送请求信号
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.Open">
+            <summary>
+            打开串口
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.ReOpen">
+            <summary>
+            重新打开串口
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.Open(System.Int32,System.Int32,System.Int32,System.IO.Ports.StopBits,System.IO.Ports.Parity,System.IO.Ports.Handshake)">
+            <summary>
+            打开串口
+            </summary>
+            <param name="ComPort">端口号</param>
+            <param name="ComRate">波特率</param>
+            <param name="Databits">数据位</param>
+            <param name="Stopbits">停止位</param>
+            <param name="Parity">校验</param>
+            <param name="ctrl">流控</param>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.Close">
+            <summary>
+            关闭串口
+            </summary>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.SendBytes(System.Byte[])">
+            <summary>
+            发送数据
+            </summary>
+            <param name="Data">BYTE数组</param>
+            <returns>发送数量</returns>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.SendBytesReply(System.Byte[],System.Boolean)">
+            <summary>
+            发送并回复
+            </summary>
+            <param name="Data">发送数据</param>
+            <returns>回复数据</returns>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.Receive(System.Byte[]@,System.Boolean)">
+            <summary>
+            接收数据
+            </summary>
+            <param name="buffer">接收数据</param>
+            <returns>数据长度</returns>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.SendString(System.String,System.Boolean,System.String)">
+            <summary>
+            发送字符串
+            </summary>
+            <param name="Data">字符串</param>
+            <param name="NewLine">是否回车换行</param>
+            <param name="Encode">文字编码</param>
+            <returns>发送数量</returns>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.Receive(System.String,System.Boolean)">
+            <summary>
+            接收字符串
+            </summary>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:System.Communicate.SerialPortSDK.Clear">
+            <summary>
+            清除缓冲区
+            </summary>
+        </member>
+    </members>
+</doc>

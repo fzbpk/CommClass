@@ -1,0 +1,16 @@
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\CommClassService.exe
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\CommClassService.pdb
+J:\Project\DotNet\CommClass\CommClassService\obj\Debug\CommClassService.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CommClass\CommClassService\obj\Debug\CommClassService.ProjectInstaller.resources
+J:\Project\DotNet\CommClass\CommClassService\obj\Debug\CommClassService.csproj.GenerateResource.Cache
+J:\Project\DotNet\CommClass\CommClassService\obj\Debug\CommClassService.exe
+J:\Project\DotNet\CommClass\CommClassService\obj\Debug\CommClassService.pdb
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\卸载服务.bat
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\安装服务.bat
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\重启服务.bat
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\MediaFactory.dll
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\SystemEX.dll
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\MediaFactory.pdb
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\SystemEX.pdb
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\SystemEX.xml
+J:\Project\DotNet\CommClass\CommClassService\bin\Debug\MediaFactory.xml

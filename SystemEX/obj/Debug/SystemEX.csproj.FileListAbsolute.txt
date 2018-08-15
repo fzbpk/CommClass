@@ -1,0 +1,6 @@
+J:\Project\DotNet\CommClass\SystemEX\bin\Debug\SystemEX.dll
+J:\Project\DotNet\CommClass\SystemEX\bin\Debug\SystemEX.pdb
+J:\Project\DotNet\CommClass\SystemEX\obj\Debug\SystemEX.dll
+J:\Project\DotNet\CommClass\SystemEX\obj\Debug\SystemEX.pdb
+J:\Project\DotNet\CommClass\SystemEX\bin\Debug\SystemEX.XML
+J:\Project\DotNet\CommClass\SystemEX\obj\Debug\SystemEX.csprojResolveAssemblyReference.cache

@@ -1,0 +1,1514 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Win32SDK
+</name>
+</assembly>
+<members>
+<member name="P:Win32SDK.Account.ReadError">
+	<summary>
+ 获取错误
+ </summary>
+	<value></value>
+	<returns>错误信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.ClearError">
+	<summary>
+ 清除错误
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Account.UserGroups">
+	<summary>
+ 获取所有系统组
+ </summary>
+	<value></value>
+	<returns>账号组</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Account.LocalUserGroups">
+	<summary>
+ 获取本地账号组
+ </summary>
+	<value></value>
+	<returns>账号组</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.GetGroupsByName(System.String)">
+	<summary>
+ 通过名称获取组信息
+ </summary>
+	<param name="Name">搜索的组名</param>
+	<returns>组信息</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Account.LocalAccount">
+	<summary>
+ 获取本地账号
+ </summary>
+	<value></value>
+	<returns>账号信息</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Account.AllAccount">
+	<summary>
+ 获取所有账号
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.GetAccountByName(System.String)">
+	<summary>
+ 通过名称获取账号信息
+ </summary>
+	<param name="Name">查询账号</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.AccountIsExist(System.String)">
+	<summary>
+ 判断账号是否存在
+ </summary>
+	<param name="Name">账号名</param>
+	<returns>TRUE存在，FALSE不存在</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.AddAccount(System.String,System.String,System.String,System.Boolean,System.String,System.Boolean,System.Boolean,System.String)">
+	<summary>
+ 增加账号
+ </summary>
+	<param name="Account">账号</param>
+	<param name="Password">密码</param>
+	<param name="Group">用户组</param>
+	<param name="active">是否启用</param>
+	<param name="HomePath">主目录</param>
+	<param name="passwordchg">密码可否改</param>
+	<param name="passwordreq">是否要求密码</param>
+	<param name="Memo">备注</param>
+	<returns>TRUE成功，FALSE失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.EditPassword(System.String,System.String)">
+	<summary>
+ 改密码
+ </summary>
+	<param name="Account">账号</param>
+	<param name="Password">密码</param>
+	<returns>TRUE成功，FALSE失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.EditAccount(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.Boolean,System.Boolean,System.String)">
+	<summary>
+ 修改账号
+ </summary>
+	<param name="Account">要修改的账号</param>
+	<param name="Password">密码</param>
+	<param name="OrgGroup">原来用户组</param>
+	<param name="Group">修改的用户组</param>
+	<param name="active">是否启用</param>
+	<param name="HomePath">主目录</param>
+	<param name="passwordchg">密码是否可更改</param>
+	<param name="passwordreq">是否需要密码</param>
+	<param name="Memo">备注</param>
+	<returns>TRUE成功，FALSE失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.DeleteAccount(System.String)">
+	<summary>
+ 删除账号
+ </summary>
+	<param name="Account">账号名</param>
+	<returns>TRUE成功，FALSE失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.AddGroupMember(System.String,System.String)">
+	<summary>
+ 添加用户到组
+ </summary>
+	<param name="GroupName">组名</param>
+	<param name="UserName">用户名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.DeleteGroupMember(System.String,System.String)">
+	<summary>
+ 删除组用户
+ </summary>
+	<param name="GroupName">组名</param>
+	<param name="UserName">用户名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.AutoLoginOn(System.String,System.String)">
+	<summary>
+ 设置自动登录
+ </summary>
+	<param name="UserName">账户名</param>
+	<param name="PassWord">密码</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.AutoLoginOff">
+	<summary>
+ 关闭自动登录
+ </summary>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Account.CreatDirectory(System.String,Win32SDK.Account.FilePower)">
+	<summary>
+ 添加文件夹，带ACL行为控制
+ </summary>
+	<param name="Directory">目录</param>
+	<param name="Power">权限</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.NetWork.ReadError">
+	<summary>
+ 获取错误
+ </summary>
+	<value></value>
+	<returns>错误信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.ClearError">
+	<summary>
+ 清除错误
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.GetALLNetWorkAP">
+	<summary>
+ 获取所有网络适配器名称
+ </summary>
+	<returns>网络适配器信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.GetEnableNetWorkAP">
+	<summary>
+ 获取可用网络适配器名称
+ </summary>
+	<returns>网络适配器信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.GetNetWorkInf(System.String)">
+	<summary>
+ 获取网络适配器信息
+ </summary>
+	<param name="Description">网络适配器名称</param>
+	<returns>网络适配器信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.GetALLNetWorkName">
+	<summary>
+ 获取所有网络连接名称
+ </summary>
+	<returns>网络连接名称</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.GetEnableNetWorkName">
+	<summary>
+ 获取可用网络连接名称
+ </summary>
+	<returns>网络连接名称</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.NetNameToNetLink(System.String)">
+	<summary>
+ 网络适配器名转网络连接名
+ </summary>
+	<param name="NetName">网络适配器名</param>
+	<returns>网络连接名</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.NetLinkToNetName(System.String)">
+	<summary>
+ 网络连接名转网络适配器名
+ </summary>
+	<param name="NetLink">网络连接名</param>
+	<returns>网络适配器名</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.GetNetWorkNameInfBYName(System.String)">
+	<summary>
+ 获取网络连接信息
+ </summary>
+	<param name="Name">网络连接名</param>
+	<returns>网络连接信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.GetNetWorkNameInfBYDescription(System.String)">
+	<summary>
+ 获取网络连接信息
+ </summary>
+	<param name="Description">网络连接名</param>
+	<returns>网络连接信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.SetIPAP(System.String,System.Boolean,System.String,System.String,System.String,System.String)">
+	<summary>
+ 设置网络适配器IP
+ </summary>
+	<param name="NetLink">网络适配器</param>
+	<param name="DHCP">DHCP开启</param>
+	<param name="IP">IP</param>
+	<param name="Mask">掩码</param>
+	<param name="GateWay">网关</param>
+	<param name="DNS">DNS地址</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.SetIP(System.String,System.Boolean,System.String,System.String,System.String,System.String)">
+	<summary>
+ 设置网络连接IP
+ </summary>
+	<param name="NetName">网络适配器</param>
+	<param name="DHCP">DHCP开启</param>
+	<param name="IP">IP</param>
+	<param name="Mask">掩码</param>
+	<param name="GateWay">网关</param>
+	<param name="DNS">DNS地址</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.NetWork.WIFIAdapter">
+	<summary>
+ 获取所有WIFI适配器名称
+ </summary>
+	<returns>WIFI适配器</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.SetAutoCfg(System.String,System.Boolean)">
+	<summary>
+ 配置是否自动设置
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<param name="SW">是否</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.GetAutoCfg(System.String)">
+	<summary>
+ 获取是否自动配置
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<returns>是否</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.SSID(System.String)">
+	<summary>
+ 获取搜索的SSID
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<returns>SSID信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.SSIDProfiles(System.String)">
+	<summary>
+ 已配置SSID连接配置
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<returns>SSID连接配置</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.ConnectWIFI(System.String,System.String,Win32SDK.NetWork.WIFIauthentication,System.String,System.String)">
+	<summary>
+ 连接SSID
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<param name="SSID">要连接的SSID</param>
+	<param name="Author">认证模式</param>
+	<param name="PassWord">密码</param>
+	<param name="Path">临时保存位置</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.AddProfile(System.String,System.String,Win32SDK.NetWork.WIFIauthentication,System.String,System.String)">
+	<summary>
+ 添加网络连接
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<param name="SSID">要连接的SSID</param>
+	<param name="Author">认证模式</param>
+	<param name="PassWord">密码</param>
+	<param name="Path">临时保存位置</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.editProfile(System.String,System.String,Win32SDK.NetWork.WIFIauthentication,System.String,System.String)">
+	<summary>
+ 编辑网络连接
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<param name="SSID">要连接的SSID</param>
+	<param name="Author">认证模式</param>
+	<param name="PassWord">密码</param>
+	<param name="Path">临时保存位置</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.DeleteProfile(System.String,System.String)">
+	<summary>
+ 删除网络连接
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<param name="SSID">SSID配置</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.CurrentSSID(System.String)">
+	<summary>
+ 当前连接的SSID
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<returns>SSID</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.DisconnectWIFI(System.String)">
+	<summary>
+ 断开WIFI连接
+ </summary>
+	<param name="NetName">WIFI适配器</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.Ping(System.String,System.UInt16,System.Int32)">
+	<summary>
+ PING函数
+ </summary>
+	<param name="DestAddr">目前地址</param>
+	<param name="PackSize">包大小</param>
+	<param name="ConnectTime">超时</param>
+	<returns>延时</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.LocalIPV4">
+	<summary>
+ 获取本地IP组
+ </summary>
+	<returns>本地IP组</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.NetWork.LocalIPV6">
+	<summary>
+ 获取本地IP组
+ </summary>
+	<returns>本地IP组</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Modem.ReadError">
+	<summary>
+ 获取错误
+ </summary>
+	<value></value>
+	<returns>错误信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.ClearError">
+	<summary>
+ 清除错误
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Modem.WaitTime">
+	<summary>
+ 获取或设置等待时间
+ </summary>
+	<value>等待时间</value>
+	<returns>等待时间</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Modem.Cache">
+	<summary>
+ 获取或设置缓存大小
+ </summary>
+	<value>缓存大小</value>
+	<returns>缓存大小</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Modem.TimeOut">
+	<summary>
+ 获取或设置超时
+ </summary>
+	<value>超时</value>
+	<returns>超时</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Modem.ModemList">
+	<summary>
+ 获取所有调制解调器信息
+ </summary>
+	<returns>调制解调器信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.SupportAT(Win32SDK.Modem.Modem_Info)">
+	<summary>
+ 是否支持AT指令
+ </summary>
+	<param name="DTU">DTU参数</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.ReSet(Win32SDK.Modem.Modem_Info)">
+	<summary>
+ 重启DTU
+ </summary>
+	<param name="DTU">DTU参数</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.SignalStrength(Win32SDK.Modem.Modem_Info)">
+	<summary>
+ 获取信号强度
+ </summary>
+	<param name="DTU">DTU参数</param>
+	<returns>信号强度百分比，0-100%，255为获取失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.SignaldB(Win32SDK.Modem.Modem_Info)">
+	<summary>
+ 获取信号增益
+ </summary>
+	<param name="DTU">DTU参数</param>
+	<returns>增益</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.MobileNet(Win32SDK.Modem.Modem_Info)">
+	<summary>
+ 获取网络运营商
+ </summary>
+	<param name="DTU">DTU参数</param>
+	<returns>运营商资料</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.ModemInit(Win32SDK.Modem.Modem_Info,System.String)">
+	<summary>
+ 初始化DTU
+ </summary>
+	<param name="DTU">DTU</param>
+	<param name="CMDStr">初始化语句，多个命令使用回车换行</param>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.ModemInit(Win32SDK.Modem.Modem_Info,System.Byte[])">
+	<summary>
+ 初始化DTU
+ </summary>
+	<param name="DTU">DTU</param>
+	<param name="CMDHex">初始化命令</param>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.Qualcomm_HSDPA_Init">
+	<summary>
+ 初始化高通设备
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.CreateVPNConnection(System.String,System.String,System.String,System.String)">
+	<summary>
+ 创建VPN连接
+ </summary>
+	<param name="EntryName">拨号连接名</param>
+	<param name="VPNServer">VPN服务器地址</param>
+	<param name="Username">用户名</param>
+	<param name="Password">密码</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.CreatePPPOEConnection(System.String,System.String,System.String)">
+	<summary>
+ 创建PPPoE连接
+ </summary>
+	<param name="EntryName">拨号连接名</param>
+	<param name="Username">用户名</param>
+	<param name="Password">密码</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.CreatePPPDConnection(System.String,Win32SDK.Modem.Modem_Info,System.String,System.String,System.String,System.String)">
+	<summary>
+ 创建GPRS,WCDMA拨号连接,CDMA待测
+ </summary>
+	<param name="EntryName">拨号连接名</param>
+	<param name="DTU">硬件设备</param>
+	<param name="DailPhoneNumber">号码</param>
+	<param name="APN">APN</param>
+	<param name="Username">用户名</param>
+	<param name="Password">密码</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.DeleteConnection(System.String)">
+	<summary>
+ 删除拨号连接
+ </summary>
+	<param name="EntryName">拨号连接名</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.Connection(System.String,System.String,System.String)">
+	<summary>
+ 连接
+ </summary>
+	<param name="EntryName">拨号连接名</param>
+	<param name="UserName">用户名</param>
+	<param name="PassWord">密码</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.DisConnection(System.IntPtr)">
+	<summary>
+ 断开当前拨号连接
+ </summary>
+	<param name="hwnd">连接句柄</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Modem.DisConnectionAll">
+	<summary>
+ 断开所有拨号连接
+ </summary>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Modem.ActiveConnection">
+	<summary>
+ 显示当前获取
+ </summary>
+	<value></value>
+	<returns>当前拨号连接名称</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Modem.AllConnection">
+	<summary>
+ 获取所有拨号连接
+ </summary>
+	<value></value>
+	<returns>连接名</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.ReadError">
+	<summary>
+ 获取错误
+ </summary>
+	<value></value>
+	<returns>错误信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.OS.ClearError">
+	<summary>
+ 清除错误
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.CurrentPlatform">
+	<summary>
+ 获取当前系统版本
+ </summary>
+	<value></value>
+	<returns>操作系统版本</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.MachineName">
+	<summary>
+ 获取计算机名
+ </summary>
+	<value></value>
+	<returns>计算机名</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.CurAccount">
+	<summary>
+ 获取当前账号
+ </summary>
+	<value></value>
+	<returns>当前账号</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.LeftRamSize">
+	<summary>
+ 获取剩余内存
+ </summary>
+	<value></value>
+	<returns>剩余内存，MB</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.TotalRamSize">
+	<summary>
+ 系统总可用内存
+ </summary>
+	<value></value>
+	<returns>内存，MB</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.UsedCpuPercent">
+	<summary>
+ CPU占用率
+ </summary>
+	<value></value>
+	<returns>CPU占用率，百分比</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.DirectXVersion">
+	<summary>
+ DirectX
+ </summary>
+	<value></value>
+	<returns>返回DX版本后，DX9C以后均显示DX9C</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.DotNetVersion">
+	<summary>
+ .NET版本
+ </summary>
+	<value></value>
+	<returns>.NET版本</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.UserDomain">
+	<summary>
+ 返回当前工作域
+ </summary>
+	<value></value>
+	<returns>工作域</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.OS.LogicDisk">
+	<summary>
+ 获取逻辑驱动器
+ </summary>
+	<value></value>
+	<returns>驱动器字符串盘符数组，NOTHING为找不到</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.OS.LogicDiskSpace(System.String,System.Int64@,System.Int64@,System.Int64@)">
+	<summary>
+ 获取逻辑盘空间大小
+ </summary>
+	<param name="DiskName">盘符</param>
+	<param name="TotalSpace">总大小，MB</param>
+	<param name="LeftSpace">剩余大小，MB</param>
+	<param name="UsedSpace">可用大小，MB</param>
+	<returns>TRUE为成功，FALSE为失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.OS.LogicDiskInfo(System.String,System.String@,System.String@)">
+	<summary>
+ 获取逻辑磁盘信息
+ </summary>
+	<param name="DiskName">盘符</param>
+	<param name="DriveFormat">磁盘格式</param>
+	<param name="VolumeLabel">卷标</param>
+	<returns>TRUE为成功，FALSE为失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.OS.FormatDisk(System.Int32,System.Boolean)">
+	<summary>
+ 格式化硬盘，慎用
+ </summary>
+	<param name="Disk">分区索引</param>
+	<param name="Fast">是否快速格式化</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.OS.FormatDisk(System.String,Win32SDK.OS.DiskFormatType,System.String,System.Boolean)">
+	<summary>
+ 格式化硬盘，慎用
+ </summary>
+	<param name="DriveLetter">盘符</param>
+	<param name="FormatType">格式化类型</param>
+	<param name="VolumeName">卷标</param>
+	<param name="Fast">快速格式化</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.OS.WriteEventLog(System.String,System.String,System.Diagnostics.EventLogEntryType)">
+	<summary>
+ 写系统日志
+ </summary>
+	<param name="LogSource">日志路径</param>
+	<param name="LogMessage">日志内容</param>
+	<param name="Type">日志类型</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.OS.ReadEventLog(System.String)">
+	<summary>
+ 读取系统日志
+ </summary>
+	<param name="LogSource">日志产生来源</param>
+	<returns>日志信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.OS.ClearLog(System.String)">
+	<summary>
+ 清除系统日志
+ </summary>
+	<param name="LogSource">日志路径,默认系统日志</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.OS.StructToBytes(System.Object)">
+	<summary>
+ 结构体转数组
+ </summary>
+	<param name="structObj">结构体</param>
+	<returns>数组</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.System32.ReadError">
+	<summary>
+ 获取错误
+ </summary>
+	<value></value>
+	<returns>错误信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.ClearError">
+	<summary>
+ 清除错误
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.SetTime(System.DateTime)">
+	<summary>
+ 设置时间
+ </summary>
+	<param name="NewTime">设置的时间</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.Reboot">
+	<summary>
+ 重启
+ </summary>
+	<returns>TRUE成功，FALSE失败，可通过错误查询信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.PowerOff">
+	<summary>
+ 关机
+ </summary>
+	<returns>TRUE成功，FALSE失败，可通过错误查询信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.LogoOff">
+	<summary>
+ 注销
+ </summary>
+	<returns>TRUE成功，FALSE失败，可通过错误查询信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.Suspend(System.Boolean)">
+	<summary>
+ 睡眠
+ </summary>
+	<param name="force">强制关机，TRUE是，FALSE否</param>
+	<returns>TRUE成功，FALSE失败，可通过错误查询信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.Hibernate(System.Boolean)">
+	<summary>
+ 休眠
+ </summary>
+	<param name="force">强制关机，TRUE是，FALSE否</param>
+	<returns>TRUE成功，FALSE失败，可通过错误查询信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.Power(System.Byte@)">
+	<summary>
+ 获取电源状态
+ </summary>
+	<param name="BatteryLeft">返回电池剩余百分比</param>
+	<returns>返回电源状态，使用AC电源，使用电池</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.CreatLnk(System.String,System.String,System.String,System.String)">
+	<summary>
+ 创建快捷方式
+ </summary>
+	<param name="AppSrc">应用程序路径</param>
+	<param name="TarSrc">目标路径</param>
+	<param name="Arg">参数</param>
+	<param name="Memo">注释</param>
+	<returns>TRUE成功，FALSE失败，可通过错误查询信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.ExitLnk(System.String,System.String)">
+	<summary>
+  判断快捷方式是否存在
+ </summary>
+	<param name="AppSrc">应用程序路径</param>
+	<param name="TarSrc">目标路径</param>
+	<returns>TRUE成功，FALSE失败，可通过错误查询信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.Shell(System.String,System.Diagnostics.ProcessWindowStyle,System.Int32)">
+	<summary>
+ 命令行
+ </summary>
+	<param name="PathName">执行命令</param>
+	<param name="style">窗口调用风格</param>
+	<param name="TimeOut">超时时间，为0则使用异步方式不等待超时</param>
+	<returns>返回的调用句柄</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.System32.SerialComList">
+	<summary>
+ 获取串口名称
+ </summary>
+	<returns>串口名称数组</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.System32.ParallelComList">
+	<summary>
+ 获取并口名称
+ </summary>
+	<returns>并口名称数组</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.ChangeResolution(System.UInt32,System.UInt32,System.UInt16,System.UInt16)">
+	<summary>
+ 更改屏幕分辨率
+ </summary>
+	<param name="iWidth">长</param>
+	<param name="iHeight">宽</param>
+	<param name="frq">刷新率</param>
+	<returns>TRUE成功，FALSE失败，，可通过错误查询信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.MoniterPower(System.Boolean)">
+	<summary>
+ 显示器电源
+ </summary>
+	<param name="SW">开关，TRUE开，FALSE关</param>
+	<returns>TRUE成功，FALSE失败，，可通过错误查询信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.SetGamma(System.Int32)">
+	<summary>
+ 设置伽马值
+ </summary>
+	<param name="gamma">值，5-35，默认10</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.ChangeDirection(Win32SDK.System32.DISPLAYORIENTATION)">
+	<summary>
+ 改变显示方向
+ </summary>
+	<param name="Angle">方向</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.VolumeUp(System.IntPtr)">
+	<summary>
+ 调大音量
+ </summary>
+	<param name="hwd">当前句柄</param>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.VolumeDown(System.IntPtr)">
+	<summary>
+ 调小音量
+ </summary>
+	<param name="hwd">当前句柄</param>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.Mute(System.IntPtr)">
+	<summary>
+ 静音
+ </summary>
+	<param name="hwd">当前句柄</param>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.EjectUsbRemoveDisk(System.String)">
+	<summary>
+ 弹出U盘
+ </summary>
+	<param name="DriveLetter">盘符</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.EjectCDRom(System.String)">
+	<summary>
+ 弹出光盘
+ </summary>
+	<param name="DriveLetter">光驱盘符</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.System32.CloseCDRom(System.String)">
+	<summary>
+ 关闭光盘，手提式不支持
+ </summary>
+	<param name="DriveLetter">光驱盘符</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.ProcessName">
+	<summary>
+ 进程名称
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.ProcessID">
+	<summary>
+ 进程ID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.Processhwnd">
+	<summary>
+ 进程句柄
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.ProcessSessionID">
+	<summary>
+ 进程会话ID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.Responding">
+	<summary>
+ 是否有响应，FALSE为无响应
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.StartTime">
+	<summary>
+ 启动时间
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.CPU">
+	<summary>
+ CPU使用率，%
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.Memory">
+	<summary>
+ 内存使用率，MB
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.User">
+	<summary>
+ 用户
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.Process32.Process_Info.FilePath">
+	<summary>
+ 路径
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Process32.ReadError">
+	<summary>
+ 获取错误
+ </summary>
+	<value></value>
+	<returns>错误信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.ClearError">
+	<summary>
+ 清除错误
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.KillProcessByName(System.String)">
+	<summary>
+ 通过进程名称关闭进程
+ </summary>
+	<param name="comObjProcessName">进程名称</param>
+	<returns>TRUE成功，FALSE失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.KillProcessByPath(System.String)">
+	<summary>
+ 通过进程路径关闭进程
+ </summary>
+	<param name="Address">进程路径</param>
+	<returns>TRUE成功，FALSE失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.FindProcessByName(System.String)">
+	<summary>
+ 通过进程名查询进程是否存在
+ </summary>
+	<param name="comObjProcessName">进程名</param>
+	<returns>TRUE存在，FALSE不存在</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.FindProcessByPath(System.String)">
+	<summary>
+ 通过进程路径查询进程是否存在
+ </summary>
+	<param name="Address">进程路径</param>
+	<returns>TRUE存在，FALSE不存在</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.FindProcessHwdByName(System.String)">
+	<summary>
+ 通过进程名查询进程句柄
+ </summary>
+	<param name="comObjProcessName">进程名</param>
+	<returns>进程句柄</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.FindProcessHwdByPath(System.String)">
+	<summary>
+ 通过进程路径查询进程句柄
+ </summary>
+	<param name="Address">进程路径</param>
+	<returns>进程句柄</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.FindProcessIDByName(System.String)">
+	<summary>
+ 通过进程名查询进程ID
+ </summary>
+	<param name="comObjProcessName">进程名</param>
+	<returns>进程ID</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.FindProcessIDByPath(System.String)">
+	<summary>
+ 通过进程路径查询进程ID
+ </summary>
+	<param name="Address">进程路径</param>
+	<returns>进程ID</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.CallEXE(System.String,System.String,System.Boolean)">
+	<summary>
+ 调用可执行程序
+ </summary>
+	<param name="WorkSrc">程序目录</param>
+	<param name="ExeName">程序名称</param>
+	<param name="Repeat">是否可用重复调用</param>
+	<returns>TRUE成功，FALSE失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.CallEXE(System.String,System.Boolean,System.String)">
+	<summary>
+ 调用程序
+ </summary>
+	<param name="Address">程序路径</param>
+	<param name="Repeat">重复</param>
+	<param name="UserName">运行账号</param>
+	<returns>TRUE成功，FALSE失败</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.CommandLine(System.String,System.Diagnostics.ProcessWindowStyle)">
+	<summary>
+ 命令行
+ </summary>
+	<param name="cmd">命令行</param>
+	<param name="style">窗口展示</param>
+	<returns>返回执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.ProcessList">
+	<summary>
+ 获取进程信息
+ </summary>
+	<returns>进程信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.ServicesStart(System.String)">
+	<summary>
+ 启动服务
+ </summary>
+	<param name="ServicesName">服务名</param>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.ServicesStop(System.String)">
+	<summary>
+ 关闭服务
+ </summary>
+	<param name="ServicesName">服务名</param>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.ServiceStart(System.String)">
+	<summary>
+ 启动服务
+ </summary>
+	<param name="ServicesName">服务名</param>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.ServiceStop(System.String)">
+	<summary>
+ 关闭服务
+ </summary>
+	<param name="ServicesName">服务名</param>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Process32.ServiceState(System.String)">
+	<summary>
+ 获取服务状态
+ </summary>
+	<param name="ServicesName">服务名</param>
+	<returns>是否在运行</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.Regedit.Err">
+	<summary>
+ 获取错误
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.ClearErr">
+	<summary>
+ 清除错误信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.GetClassesRoot(System.String,System.String)">
+	<summary>
+ 获取ClassesRoot 
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<returns>值</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.SetClassesRoot(System.String,System.String,System.String)">
+	<summary>
+ 设置ClassesRoot
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<param name="NewValue">值</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.GetCurrentUser(System.String,System.String)">
+	<summary>
+ 获取CurrentUser 
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<returns>值</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.SetCurrentUser(System.String,System.String,System.String)">
+	<summary>
+ 设置CurrentUser
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<param name="NewValue">值</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.GetLocalMachine(System.String,System.String)">
+	<summary>
+ 获取LocalMachine 
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<returns>值</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.SetLocalMachine(System.String,System.String,System.String)">
+	<summary>
+ 设置LocalMachine
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<param name="NewValue">值</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.GetUsers(System.String,System.String)">
+	<summary>
+ 获取Users 
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<returns>值</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.SetUsers(System.String,System.String,System.String)">
+	<summary>
+ 设置Users
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<param name="NewValue">值</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.GetPerformanceData(System.String,System.String)">
+	<summary>
+ 获取PerformanceData 
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<returns>值</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.SetPerformanceData(System.String,System.String,System.String)">
+	<summary>
+ 设置PerformanceData
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<param name="NewValue">值</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.GetCurrentConfig(System.String,System.String)">
+	<summary>
+ 获取CurrentConfig 
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<returns>值</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.Regedit.SetCurrentConfig(System.String,System.String,System.String)">
+	<summary>
+ 设置CurrentConfig
+ </summary>
+	<param name="Path">路径</param>
+	<param name="ValueName">键值</param>
+	<param name="NewValue">值</param>
+	<returns>执行结果</returns>
+	<remarks></remarks>
+</member><member name="P:Win32SDK.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Win32SDK.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Win32SDK.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Win32SDK.HardWave.ReadError">
+	<summary>
+ 获取错误
+ </summary>
+	<value></value>
+	<returns>错误信息</returns>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.HardWave.ClearError">
+	<summary>
+ 清除错误
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.DeviceID">
+	<summary>
+ 设备ID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.ProcessorID">
+	<summary>
+ CPUID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.Manufacturer">
+	<summary>
+ 制造商
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.Name">
+	<summary>
+ 设备名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.Description">
+	<summary>
+ 设备描述
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.UniqueId">
+	<summary>
+ 唯一ID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.SocketDesignation">
+	<summary>
+ 连接插口
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.AddressWidth">
+	<summary>
+ 地址位宽
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.DataWidth">
+	<summary>
+ 数据位宽
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.Family">
+	<summary>
+ 家族系列
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.Level">
+	<summary>
+ 级别
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.Stepping">
+	<summary>
+ 步进
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.MaxClockSpeed">
+	<summary>
+ 最高频率
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.CurrentClockSpeed">
+	<summary>
+ 当前频率
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.InstallDate">
+	<summary>
+ 安装日期
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.PNPDeviceID">
+	<summary>
+ PNP设备ID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.L2CacheSize">
+	<summary>
+ 二级缓存大小
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.L2CacheSpeed">
+	<summary>
+ 二级缓存速度
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.L3CacheSize">
+	<summary>
+ 三级缓存大小
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.L3CacheSpeed">
+	<summary>
+ 三级缓存速度
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.Architecture">
+	<summary>
+ 处理器架构
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.Availability">
+	<summary>
+ 可用状态
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.CurrentVoltage">
+	<summary>
+ 当前电压
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.ProcessorType">
+	<summary>
+ 处理器体系
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.StatusInfo">
+	<summary>
+ 状态
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.UpgradeMethod">
+	<summary>
+ 升级方法
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.CPU_info.VoltageCaps">
+	<summary>
+ 核心电压
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Win32SDK.HardWave.CPU_info">
+	<summary>
+ CPU信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.HardWave.Get_CPU_info">
+	<summary>
+ 获取CPU信息
+ </summary>
+	<returns>CPU信息</returns>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.OS_info.CSName">
+	<summary>
+ 系统名称
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.OS_info.Caption">
+	<summary>
+ 描述
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.OS_info.Version">
+	<summary>
+ 版本
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.OS_info.BuildNumber">
+	<summary>
+ 内部版本
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.OS_info.BuildType">
+	<summary>
+ 内部类型
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.OS_info.OSType">
+	<summary>
+ 操作系统类型
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.OS_info.OSProductsuite">
+	<summary>
+ 操作系统套装
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.OS_info.OtherTypeDescription">
+	<summary>
+ 其他类型描述
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Win32SDK.HardWave.OS_info">
+	<summary>
+ 操作系统信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.HardWave.Get_OS_info">
+	<summary>
+ 获取系统信息
+ </summary>
+	<returns>操作系统信息</returns>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.Index">
+	<summary>
+ 网卡索引号
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPEnabled">
+	<summary>
+ 是否使用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.Caption">
+	<summary>
+ 名称
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.MACAddress">
+	<summary>
+ MAC地址
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPAddress">
+	<summary>
+ IP地址
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DefaultIPGateway">
+	<summary>
+ 默认网关
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPSubnet">
+	<summary>
+ 子网掩码
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPConnectionMetric">
+	<summary>
+ 路由
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPSecPermitIPProtocols">
+	<summary>
+ 允许在 IP 上运行的协议构成的数组
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPSecPermitTCPPorts">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DefaultTTL">
+	<summary>
+ TTL
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPXMediaType">
+	<summary>
+ IPV6传输类型
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPXAddress">
+	<summary>
+ IPV6地址
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPXFrameType">
+	<summary>
+ IPV6祯类型
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPXNetworkNumber">
+	<summary>
+ IPV6网络号
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IPXVirtualNetNumber">
+	<summary>
+ IPV6虚拟网络号
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.ForwardBufferMemory">
+	<summary>
+ 缓冲区
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.ServiceName">
+	<summary>
+ 服务名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DHCPEnabled">
+	<summary>
+ DHCP是否启用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DHCPLeaseExpires">
+	<summary>
+ DHCP有效期
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DHCPLeaseObtained">
+	<summary>
+ DHCP生存期
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DHCPServer">
+	<summary>
+ DHCP服务
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DNSDomain">
+	<summary>
+ DHCP域
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DNSHostName">
+	<summary>
+ DNS主机名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DNSEnabledForWINSResolution">
+	<summary>
+ DNS是否启用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.DNSServerSearchOrder">
+	<summary>
+ DNS服务优先级
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Win32SDK.HardWave.NetApter_info.IGMPLevel">
+	<summary>
+ IGMP级别
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Win32SDK.HardWave.NetApter_info">
+	<summary>
+ 网卡信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.HardWave.Get_NetApter_info">
+	<summary>
+ 获取网卡信息
+ </summary>
+	<returns>网卡信息</returns>
+	<remarks></remarks>
+</member><member name="T:Win32SDK.HardWave.HardDisk_info">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Win32SDK.HardWave.Get_HardDisk_info">
+	<summary>
+ 获取硬盘信息
+ </summary>
+	<returns>硬盘信息</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

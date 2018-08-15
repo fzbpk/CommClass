@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Win32Compress</name>
+    </assembly>
+    <members>
+        <member name="M:Win32Compress.GZIP.ZipPath(System.String,System.String,System.String,System.String)">
+            <summary>
+            压缩文件夹
+            </summary>
+            <param name="OrgPath">源文件夹</param>
+            <param name="DestPath">目标文件夹</param>
+            <param name="FileName">文件名</param>
+            <param name="Password">密码</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:Win32Compress.GZIP.ZipCurPath(System.String,System.String,System.String,System.String)">
+            <summary>
+            压缩当前文件夹
+            </summary>
+            <param name="OrgPath">源文件夹</param>
+            <param name="DestPath">目标文件夹</param>
+            <param name="FileName">文件名</param>
+            <param name="Password">密码</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:Win32Compress.GZIP.ZipFile(System.String,System.String,System.String)">
+            <summary>
+            压缩单个文件
+            </summary>
+            <param name="FileToZip">源文件</param>
+            <param name="ZipedFile">目标文件</param>
+            <param name="Password">密码</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:Win32Compress.GZIP.UnZip(System.String,System.String,System.String)">
+            <summary>
+            解压缩
+            </summary>
+            <param name="OrgFile">ZIP文件</param>
+            <param name="DestPath">目标文件夹</param>
+            <param name="Password">密码</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:Win32Compress.GZIP.UnZipFile(System.String,System.String,Win32Compress.GZIP.EntryContent,System.String)">
+            <summary>
+            解压缩单个文件
+            </summary>
+            <param name="OrgFile">zip文件</param>
+            <param name="DestPath">目标文件夹</param>
+            <param name="Entry">要解压的文件信息</param>
+            <param name="Password">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Win32Compress.GZIP.ZipContent(System.String,System.String,System.String)">
+            <summary>
+            获取ZIP文件下所有文件信息
+            </summary>
+            <param name="OrgFile">zip文件</param>
+            <param name="Password">密码</param>
+            <param name="Key">搜索条件</param>
+            <returns>文件信息</returns>
+        </member>
+        <member name="M:Win32Compress.GZIP.ZipFileList(System.String,System.String,System.String)">
+            <summary>
+            获取ZIP文件下文件信息
+            </summary>
+            <param name="OrgFile">zip文件</param>
+            <param name="Password">密码</param>
+            <param name="Key">搜索条件</param>
+            <returns>文件信息</returns>
+        </member>
+        <member name="M:Win32Compress.GZIP.ZipDirectoryList(System.String,System.String,System.String)">
+            <summary>
+            获取ZIP文件下所有目录信息
+            </summary>
+            <param name="OrgFile">zip文件</param>
+            <param name="Password">密码</param>
+            <param name="Key">搜索条件</param>
+            <returns>目录信息</returns>
+        </member>
+        <member name="P:Win32Compress.GZIP.Err">
+            <summary>
+            获取错误信息
+            </summary>
+        </member>
+    </members>
+</doc>

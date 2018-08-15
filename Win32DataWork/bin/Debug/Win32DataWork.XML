@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Win32DataWork</name>
+    </assembly>
+    <members>
+        <member name="M:Win32DataWork.CheckSum.CRC16(System.Byte[],System.UInt16)">
+            <summary>
+            CRC16 
+            </summary>
+            <param name="data">校验数据</param>
+            <param name="key">多项式</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:Win32DataWork.CheckSum.CRC8(System.Byte[],System.Byte)">
+            <summary>
+            CRC8
+            </summary>
+            <param name="data">校验数据</param>
+            <param name="key">多项式</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:Win32DataWork.CheckSum.CRC32(System.Byte[],System.UInt32)">
+            <summary>
+            CRC32
+            </summary>
+            <param name="data">校验数据</param>
+            <param name="key">多项式</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:Win32DataWork.CheckSum.CRC32File(System.String,System.Int32)">
+            <summary>
+            文件CRC32
+            </summary>
+            <param name="FilePath">文件路径</param>
+            <param name="BufferSize">缓存大小</param>
+            <returns>CRC值</returns>
+        </member>
+        <member name="M:Win32DataWork.CheckSum.Xor(System.Byte[])">
+            <summary>
+            异或
+            </summary>
+            <param name="data">校验数据</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:Win32DataWork.CheckSum.And(System.Byte[])">
+            <summary>
+            校验和
+            </summary>
+            <param name="bytes">校验数组</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="P:Win32DataWork.CheckSum.Error">
+            <summary>
+            获取错误
+            </summary>
+        </member>
+        <member name="M:Win32DataWork.Security.MD5(System.String,System.String)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.DesEncrypt(System.String,System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.DesEncryptByByte(System.String,System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.DesEncryptByte(System.Byte[],System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.DesDecrypt(System.String,System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.DesDecrypt(System.Byte[],System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.DesDecryptFromByte(System.Byte[],System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.DesDecryptByByte(System.Byte[],System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.TripeDesEncrypt(System.String,System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.TripeDesEncryptByByte(System.String,System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.TripeDesEncryptByte(System.Byte[],System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.TripeDesDecrypt(System.String,System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.TripeDesDecrypt(System.Byte[],System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="M:Win32DataWork.Security.TripeDesDecryptByByte(System.Byte[],System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes解密
+            </summary>
+            <param name="code">加密字符串</param>
+            <param name="Key">密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns>被加密字符串</returns>
+        </member>
+        <member name="P:Win32DataWork.Security.Error">
+            <summary>
+            获取错误
+            </summary>
+        </member>
+    </members>
+</doc>

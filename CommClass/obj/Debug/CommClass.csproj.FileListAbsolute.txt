@@ -1,0 +1,57 @@
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\bin\Debug\CommClass.exe.config
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\bin\Debug\CommClass.exe
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\bin\Debug\CommClass.pdb
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\bin\Debug\Win32CTC.dll
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\bin\Debug\Win32CTC.pdb
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\bin\Debug\Win32CTC.xml
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\obj\Debug\CommClass.csprojResolveAssemblyReference.cache
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\obj\Debug\CommClass.Form1.resources
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\obj\Debug\CommClass.Properties.Resources.resources
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\obj\Debug\CommClass.csproj.GenerateResource.Cache
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\obj\Debug\CommClass.exe
+H:\Project\Visual Studio 2012\Projects\CommClass\CommClass\obj\Debug\CommClass.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\bin\Debug\CommClass.exe.config
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\obj\Debug\CommClass.exe
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\obj\Debug\CommClass.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\obj\Debug\CommClass.csprojResolveAssemblyReference.cache
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\obj\Debug\CommClass.Form1.resources
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\obj\Debug\CommClass.Properties.Resources.resources
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\obj\Debug\CommClass.csproj.GenerateResource.Cache
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\bin\Debug\CommClass.exe
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\bin\Debug\CommClass.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\bin\Debug\Win32CTC.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\bin\Debug\Win32CTC.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\CommClass\bin\Debug\Win32CTC.xml
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\CommClass.exe.config
+J:\Project\DotNet\CommClass\CommClass\obj\Debug\CommClass.exe
+J:\Project\DotNet\CommClass\CommClass\obj\Debug\CommClass.pdb
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\CommClass.exe
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\CommClass.pdb
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\MediaFactory.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\MediaFactory.pdb
+J:\Project\DotNet\CommClass\CommClass\obj\Debug\CommClass.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CommClass\CommClass\obj\Debug\CommClass.Form1.resources
+J:\Project\DotNet\CommClass\CommClass\obj\Debug\CommClass.Properties.Resources.resources
+J:\Project\DotNet\CommClass\CommClass\obj\Debug\CommClass.csproj.GenerateResource.Cache
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\SystemEX.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\SystemEX.pdb
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\SystemEX.xml
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\MediaFactory.xml
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\DataDriver.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\DataFactory.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\MySql.Data.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\Oracle.DataAccess.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\Npgsql.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\System.Data.SQLite.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\linq2db.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\DataDriver.pdb
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\DataDriver.xml
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\DataFactory.pdb
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\DataFactory.xml
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\linq2db.pdb
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\Communicate.dll
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\Communicate.pdb
+J:\Project\DotNet\CommClass\CommClass\bin\Debug\Communicate.xml
+H:\Project\DotNet\CommClass\CommClass\bin\Debug\CommClass.exe.config
+H:\Project\DotNet\CommClass\CommClass\obj\Debug\CommClass.exe
+H:\Project\DotNet\CommClass\CommClass\obj\Debug\CommClass.pdb

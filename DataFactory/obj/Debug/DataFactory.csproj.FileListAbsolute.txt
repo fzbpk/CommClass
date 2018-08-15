@@ -1,0 +1,34 @@
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataFactory.dll
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataFactory.pdb
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataDriver.dll
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\MySql.Data.dll
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataDriver.pdb
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataDriver.xml
+J:\Project\DotNet\CHMonter\DataFactory\obj\Debug\DataFactory.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CHMonter\DataFactory\obj\Debug\DataFactory.dll
+J:\Project\DotNet\CHMonter\DataFactory\obj\Debug\DataFactory.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\obj\Debug\DataFactory.csprojResolveAssemblyReference.cache
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\obj\Debug\DataFactory.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataFactory.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataFactory.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataDriver.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\MySql.Data.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataDriver.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataDriver.xml
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\obj\Debug\DataFactory.pdb
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataFactory.dll.config
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataFactory.XML
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataFactory.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataFactory.pdb
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataDriver.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\linq2db.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\MySql.Data.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\Oracle.DataAccess.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\System.Data.SQLite.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataDriver.pdb
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataDriver.xml
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\linq2db.pdb
+J:\Project\DotNet\CommClass\DataFactory\obj\Debug\DataFactory.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CommClass\DataFactory\obj\Debug\DataFactory.dll
+J:\Project\DotNet\CommClass\DataFactory\obj\Debug\DataFactory.pdb
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\Npgsql.dll

@@ -1,0 +1,1295 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataDriver</name>
+    </assembly>
+    <members>
+        <member name="E:DataDriver.Access.HasDataBaseError">
+            <summary>
+            错误事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.Access.DataBaseConnected">
+            <summary>
+            数据库连接成功事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.Access.DataBaseConnectedErr">
+            <summary>
+            数据库连接失败事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.Access.DataBaseClosed">
+            <summary>
+            数据库关闭事件
+            </summary>
+        </member>
+        <member name="M:DataDriver.Access.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.Access.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.Access.Dispose(System.Boolean)">
+            <summary>
+            释放连接
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="M:DataDriver.Access.GetConnection">
+            <summary>
+            打开数据库连接
+            </summary>
+            <returns>数据库连接</returns>
+        </member>
+        <member name="M:DataDriver.Access.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            关闭数据库连接
+            </summary>
+            <param name="conn">数据库连接</param>
+        </member>
+        <member name="M:DataDriver.Access.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:DataDriver.Access.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:DataDriver.Access.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.Access.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.Access.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.Access.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.Access.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:DataDriver.Access.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:DataDriver.Access.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:DataDriver.Access.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.Access.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.Access.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.Access.DataTableSave(System.Data.DataTable,System.String)">
+            <summary>
+            批量执行
+            </summary>
+            <param name="DT">数据</param>
+            <param name="TableName">目的表</param>
+        </member>
+        <member name="M:DataDriver.Access.SaveChange(System.Boolean)">
+            <summary>
+            执行事务并完成事务，当出错后自动回滚。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.Access.Cancel">
+            <summary>
+            回滚后完成事务。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.Access.TExecuteNonQuery(System.String)">
+            <summary>
+            事务SQL
+            </summary>
+            <param name="sql">SQL语句</param>
+        </member>
+        <member name="T:DataDriver.HasDataBaseErrorEven">
+            <summary>
+            数据库错误
+            </summary>
+            <param name="Func">函数</param>
+            <param name="ex">错误信息</param>
+        </member>
+        <member name="T:DataDriver.DataBaseConnectedEven">
+            <summary>
+            数据库连接成功事件
+            </summary>
+            <param name="conn">数据库连接</param>
+        </member>
+        <member name="T:DataDriver.DataBaseConnectedErrEven">
+            <summary>
+            数据库连接失败事件
+            </summary>
+            <param name="ex">错误信息</param>
+        </member>
+        <member name="T:DataDriver.DataBaseClosedEven">
+            <summary>
+            数据库关闭连接
+            </summary>
+            <param name="conn">数据库连接</param>
+        </member>
+        <member name="T:DataDriver.IDataBase">
+            <summary>
+            数据库接口
+            </summary>
+        </member>
+        <member name="P:DataDriver.IDataBase.Connection">
+            <summary>
+            连接串
+            </summary>
+        </member>
+        <member name="P:DataDriver.IDataBase.Timeout">
+            <summary>
+            超时
+            </summary>
+        </member>
+        <member name="M:DataDriver.IDataBase.Dispose">
+            <summary>
+            释放
+            </summary>
+        </member>
+        <member name="M:DataDriver.IDataBase.GetConnection">
+            <summary>
+            连接数据库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            数据库连接关闭
+            </summary>
+            <param name="conn">打开的数据库连接</param>
+        </member>
+        <member name="M:DataDriver.IDataBase.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.IDataBase.DataTableSave(System.Data.DataTable,System.String)">
+            <summary>
+            批量执行,ACCESS,SQLite,MYSQL不支持
+            </summary>
+            <param name="DT">数据</param>
+            <param name="TableName">目的表</param>
+        </member>
+        <member name="M:DataDriver.IDataBase.Transaction">
+            <summary>
+            启用实物
+            </summary>
+        </member>
+        <member name="M:DataDriver.IDataBase.SaveChange(System.Boolean)">
+            <summary>
+            执行事务并完成事务，当出错后自动回滚。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.IDataBase.Cancel">
+            <summary>
+            回滚后完成事务。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.IDataBase.TExecuteNonQuery(System.String)">
+            <summary>
+            事务SQL
+            </summary>
+            <param name="sql">SQL语句</param>
+        </member>
+        <member name="E:DataDriver.IDataBase.HasDataBaseError">
+            <summary>
+            出现错误
+            </summary>
+        </member>
+        <member name="E:DataDriver.IDataBase.DataBaseConnected">
+            <summary>
+            数据库连接
+            </summary>
+        </member>
+        <member name="E:DataDriver.IDataBase.DataBaseConnectedErr">
+            <summary>
+            数据库连接失败
+            </summary>
+        </member>
+        <member name="E:DataDriver.IDataBase.DataBaseClosed">
+            <summary>
+            数据库关闭连接
+            </summary>
+        </member>
+        <member name="E:DataDriver.MSSql.HasDataBaseError">
+            <summary>
+            错误事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.MSSql.DataBaseConnected">
+            <summary>
+            数据库连接成功事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.MSSql.DataBaseConnectedErr">
+            <summary>
+            数据库连接失败事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.MSSql.DataBaseClosed">
+            <summary>
+            数据库关闭事件
+            </summary>
+        </member>
+        <member name="M:DataDriver.MSSql.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.MSSql.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.MSSql.Dispose(System.Boolean)">
+            <summary>
+            释放连接
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="M:DataDriver.MSSql.GetConnection">
+            <summary>
+            打开数据库连接
+            </summary>
+            <returns>数据库连接</returns>
+        </member>
+        <member name="M:DataDriver.MSSql.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            关闭数据库连接
+            </summary>
+            <param name="conn">数据库连接</param>
+        </member>
+        <member name="M:DataDriver.MSSql.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:DataDriver.MSSql.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:DataDriver.MSSql.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.MSSql.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.MSSql.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.MSSql.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.MSSql.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:DataDriver.MSSql.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:DataDriver.MSSql.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:DataDriver.MSSql.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.MSSql.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.MSSql.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.MSSql.DataTableSave(System.Data.DataTable,System.String)">
+            <summary>
+            批量执行
+            </summary>
+            <param name="DT">数据</param>
+            <param name="TableName">目的表</param>
+        </member>
+        <member name="M:DataDriver.MSSql.SaveChange(System.Boolean)">
+            <summary>
+            执行事务并完成事务，当出错后自动回滚。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.MSSql.Cancel">
+            <summary>
+            回滚后完成事务。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.MSSql.TExecuteNonQuery(System.String)">
+            <summary>
+            事务SQL
+            </summary>
+            <param name="sql">SQL语句</param>
+        </member>
+        <member name="E:DataDriver.MySql.HasDataBaseError">
+            <summary>
+            错误事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.MySql.DataBaseConnected">
+            <summary>
+            数据库连接成功事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.MySql.DataBaseConnectedErr">
+            <summary>
+            数据库连接失败事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.MySql.DataBaseClosed">
+            <summary>
+            数据库关闭事件
+            </summary>
+        </member>
+        <member name="M:DataDriver.MySql.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.MySql.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.MySql.Dispose(System.Boolean)">
+            <summary>
+            释放连接
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="M:DataDriver.MySql.GetConnection">
+            <summary>
+            打开数据库连接
+            </summary>
+            <returns>数据库连接</returns>
+        </member>
+        <member name="M:DataDriver.MySql.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            关闭数据库连接
+            </summary>
+            <param name="conn">数据库连接</param>
+        </member>
+        <member name="M:DataDriver.MySql.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:DataDriver.MySql.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:DataDriver.MySql.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.MySql.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.MySql.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.MySql.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.MySql.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:DataDriver.MySql.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:DataDriver.MySql.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:DataDriver.MySql.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.MySql.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.MySql.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.MySql.DataTableSave(System.Data.DataTable,System.String)">
+            <summary>
+            批量执行
+            </summary>
+            <param name="DT">数据</param>
+            <param name="TableName">目的表</param>
+        </member>
+        <member name="M:DataDriver.MySql.SaveChange(System.Boolean)">
+            <summary>
+            执行事务并完成事务，当出错后自动回滚。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.MySql.Cancel">
+            <summary>
+            回滚后完成事务。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.MySql.TExecuteNonQuery(System.String)">
+            <summary>
+            事务SQL
+            </summary>
+            <param name="sql">SQL语句</param>
+        </member>
+        <member name="E:DataDriver.Oracle.HasDataBaseError">
+            <summary>
+            错误事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.Oracle.DataBaseConnected">
+            <summary>
+            数据库连接成功事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.Oracle.DataBaseConnectedErr">
+            <summary>
+            数据库连接失败事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.Oracle.DataBaseClosed">
+            <summary>
+            数据库关闭事件
+            </summary>
+        </member>
+        <member name="M:DataDriver.Oracle.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.Oracle.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.Oracle.Dispose(System.Boolean)">
+            <summary>
+            释放连接
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="M:DataDriver.Oracle.GetConnection">
+            <summary>
+            打开数据库连接
+            </summary>
+            <returns>数据库连接</returns>
+        </member>
+        <member name="M:DataDriver.Oracle.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            关闭数据库连接
+            </summary>
+            <param name="conn">数据库连接</param>
+        </member>
+        <member name="M:DataDriver.Oracle.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:DataDriver.Oracle.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:DataDriver.Oracle.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.Oracle.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.Oracle.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.Oracle.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.Oracle.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:DataDriver.Oracle.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:DataDriver.Oracle.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:DataDriver.Oracle.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.Oracle.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.Oracle.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.Oracle.DataTableSave(System.Data.DataTable,System.String)">
+            <summary>
+            批量执行
+            </summary>
+            <param name="DT">数据</param>
+            <param name="TableName">目的表</param>
+        </member>
+        <member name="M:DataDriver.Oracle.SaveChange(System.Boolean)">
+            <summary>
+            执行事务并完成事务，当出错后自动回滚。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.Oracle.Cancel">
+            <summary>
+            回滚后完成事务。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.Oracle.TExecuteNonQuery(System.String)">
+            <summary>
+            事务SQL
+            </summary>
+            <param name="sql">SQL语句</param>
+        </member>
+        <member name="E:DataDriver.PostgreSQL.HasDataBaseError">
+            <summary>
+            错误事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.PostgreSQL.DataBaseConnected">
+            <summary>
+            数据库连接成功事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.PostgreSQL.DataBaseConnectedErr">
+            <summary>
+            数据库连接失败事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.PostgreSQL.DataBaseClosed">
+            <summary>
+            数据库关闭事件
+            </summary>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.Dispose(System.Boolean)">
+            <summary>
+            释放连接
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.GetConnection">
+            <summary>
+            打开数据库连接
+            </summary>
+            <returns>数据库连接</returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            关闭数据库连接
+            </summary>
+            <param name="conn">数据库连接</param>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.DataTableSave(System.Data.DataTable,System.String)">
+            <summary>
+            批量执行
+            </summary>
+            <param name="DT">数据</param>
+            <param name="TableName">目的表</param>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.SaveChange(System.Boolean)">
+            <summary>
+            执行事务并完成事务，当出错后自动回滚。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.Cancel">
+            <summary>
+            回滚后完成事务。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.PostgreSQL.TExecuteNonQuery(System.String)">
+            <summary>
+            事务SQL
+            </summary>
+            <param name="sql">SQL语句</param>
+        </member>
+        <member name="E:DataDriver.SQLite.HasDataBaseError">
+            <summary>
+            错误事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.SQLite.DataBaseConnected">
+            <summary>
+            数据库连接成功事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.SQLite.DataBaseConnectedErr">
+            <summary>
+            数据库连接失败事件
+            </summary>
+        </member>
+        <member name="E:DataDriver.SQLite.DataBaseClosed">
+            <summary>
+            数据库关闭事件
+            </summary>
+        </member>
+        <member name="M:DataDriver.SQLite.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.SQLite.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DataDriver.SQLite.Dispose(System.Boolean)">
+            <summary>
+            释放连接
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="M:DataDriver.SQLite.GetConnection">
+            <summary>
+            打开数据库连接
+            </summary>
+            <returns>数据库连接</returns>
+        </member>
+        <member name="M:DataDriver.SQLite.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            关闭数据库连接
+            </summary>
+            <param name="conn">数据库连接</param>
+        </member>
+        <member name="M:DataDriver.SQLite.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:DataDriver.SQLite.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:DataDriver.SQLite.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.SQLite.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.SQLite.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.SQLite.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.SQLite.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:DataDriver.SQLite.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:DataDriver.SQLite.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:DataDriver.SQLite.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataDriver.SQLite.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.SQLite.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:DataDriver.SQLite.DataTableSave(System.Data.DataTable,System.String)">
+            <summary>
+            批量执行
+            </summary>
+            <param name="DT">数据</param>
+            <param name="TableName">目的表</param>
+        </member>
+        <member name="M:DataDriver.SQLite.SaveChange(System.Boolean)">
+            <summary>
+            执行事务并完成事务，当出错后自动回滚。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.SQLite.Cancel">
+            <summary>
+            回滚后完成事务。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:DataDriver.SQLite.TExecuteNonQuery(System.String)">
+            <summary>
+            事务SQL
+            </summary>
+            <param name="sql">SQL语句</param>
+        </member>
+    </members>
+</doc>

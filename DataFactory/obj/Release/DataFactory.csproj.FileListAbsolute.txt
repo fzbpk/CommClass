@@ -1,0 +1,9 @@
+J:\Project\DotNet\CHMonter\DataFactory\bin\Release\DataFactory.dll
+J:\Project\DotNet\CHMonter\DataFactory\bin\Release\DataFactory.pdb
+J:\Project\DotNet\CHMonter\DataFactory\bin\Release\DataDriver.dll
+J:\Project\DotNet\CHMonter\DataFactory\bin\Release\MySql.Data.dll
+J:\Project\DotNet\CHMonter\DataFactory\bin\Release\DataDriver.pdb
+J:\Project\DotNet\CHMonter\DataFactory\bin\Release\DataDriver.xml
+J:\Project\DotNet\CHMonter\DataFactory\obj\Release\DataFactory.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CHMonter\DataFactory\obj\Release\DataFactory.dll
+J:\Project\DotNet\CHMonter\DataFactory\obj\Release\DataFactory.pdb
